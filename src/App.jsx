@@ -1,4 +1,4 @@
-import reactLogo from './assets/react.svg'
+import construccion from '/construccion.jpg'
 import './App.css'
 import React from 'react';
 
@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <h1>Página en Construcción</h1>
+      <img src={construccion} alt="en construccion" className='h-135' />
     </>
   )
 }
