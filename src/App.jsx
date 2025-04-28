@@ -1,13 +1,27 @@
 import './App.css'
 import React from 'react';
+import Home from './pages/Home';
+import ServiciosPage from './pages/ServiciosPage';
+import PortafolioPage from './pages/PortafolioPage';
+import ContactoPage from './pages/ContactoPage';
+
+import { Route, Link } from 'wouter';
 
 function App() {
-
   return (
     <>
-    <h1 className='text-3xl'>Página en Construcción </h1>
-    </>
-  )
-}
+      <nav>
+        <Link href="/"> Inicio </Link>
+        <Link href="Servicios"> Servicios </Link>
+        <Link href="Portafolio"> Portafolio </Link>
+        <Link href="Contacto"> Contacto </Link>
+      </nav>
 
-export default App
+      <Route path="/" component={Home} />
+      <Route path="/servicios" component={ServiciosPage} />
+      <Route path="/portafolio" component={PortafolioPage} />
+      <Route path="/contacto" component={ContactoPage} />
+    </>
+  );
+}
+export default App;
