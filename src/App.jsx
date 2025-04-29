@@ -1,26 +1,13 @@
 import './App.css'
 import React from 'react';
-import Home from './pages/Home';
-import ServiciosPage from './pages/ServiciosPage';
-import PortafolioPage from './pages/PortafolioPage';
-import ContactoPage from './pages/ContactoPage';
-
-import { Route, Link } from 'wouter';
+import Header  from  "./components/Header"
+import Footer  from  "./components/Footer"
 
 function App() {
   return (
     <>
-      <nav>
-        <Link href="/"> Inicio </Link>
-        <Link href="Servicios"> Servicios </Link>
-        <Link href="Portafolio"> Portafolio </Link>
-        <Link href="Contacto"> Contacto </Link>
-      </nav>
-
-      <Route path="/" component={Home} />
-      <Route path="/servicios" component={ServiciosPage} />
-      <Route path="/portafolio" component={PortafolioPage} />
-      <Route path="/contacto" component={ContactoPage} />
+     <Header/>
+      <Footer/>
     </>
   );
 }
