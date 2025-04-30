@@ -20,10 +20,10 @@ const Header = () => {
            <img src={logoletra} alt="Logo de Solware" className="object-contain  lg:w-70  " />
         </div>
         <nav className='gap-4 lg:w-3/4 hidden h-18  md:flex justify-end pr-30  bg-yellow-500 text-white items-center'> 
-        <Link href="/" className='mr-3 text-xl pr-3 ml-20'> Inicio </Link>
-        <Link href="Servicios"className='mr-3 text-xl pr-3' > Servicios </Link>
-        <Link href="Portafolio"className='mr-3 text-xl pr-3' > Portafolio </Link>
-        <Link href="Contacto"className='mr-3 text-xl pr-3' > Contacto </Link>
+        <Link href="/" className='mr-3 text-xl pr-3 ml-20 font-semibold'> Inicio </Link>
+        <Link href="Servicios"className='mr-3 text-xl pr-3 font-semibold' > Servicios </Link>
+        <Link href="Portafolio"className='mr-3 text-xl pr-3 font-semibold' > Portafolio </Link>
+        <Link href="Contacto"className='mr-3 text-xl pr-3 font-semibold' > Contacto </Link>
         </nav>
 
 
