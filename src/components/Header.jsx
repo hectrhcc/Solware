@@ -10,18 +10,16 @@ import { Route, Link } from 'wouter';
 const Header = () => {
   return (
     <>    
-    <header className='w-full flex justify-between items-center p-0'>
+    <header className='w-full h-full flex justify-between items-center p-4 bg-yellow-500'>
          {/* Izquierda: menu hamburguesa */}
-        <div className='lg:hidden h-18 items-start w-1/3 bg-gray-800 text-white p-4'>
+        <div className='lg:hidden  h-16.5 items-center  w-1/3 bg-yellow-500  text-white '>
            <span className=''>hamburguesa</span> 
         </div>
         {/* Derecha: logo  */}
-        <div className='lg:w-1/4 items-start w-2/3 bg-gray-800 text-white p-4'>
-           
-           <img src={logoletra} alt="Logo de Solware" className="h-10 w-full lg:w-60" />
- 
+        <div className='lg:w-1/4 items-start w-2/3 bg-yellow-500 flex' >
+           <img src={logoletra} alt="Logo de Solware" className="object-contain  lg:w-70  " />
         </div>
-        <nav className=' lg:w-3/4 hidden  h-18 md:flex justify-end-safe pr-30   gap-4 bg-gray-800 text-white p-2 items-center'> 
+        <nav className='gap-4 lg:w-3/4 hidden h-18  md:flex justify-end pr-30  bg-yellow-500 text-white items-center'> 
         <Link href="/" className='mr-3 text-xl pr-3 ml-20'> Inicio </Link>
         <Link href="Servicios"className='mr-3 text-xl pr-3' > Servicios </Link>
         <Link href="Portafolio"className='mr-3 text-xl pr-3' > Portafolio </Link>
