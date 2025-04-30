@@ -4,6 +4,7 @@ import ServiciosPage from '../pages/ServiciosPage';
 import PortafolioPage from '../pages/PortafolioPage';
 import ContactoPage from '../pages/ContactoPage';
 import logoletra from '../logoletra.png'
+import Hamburguesa from './Hamburguesa';
 
 import { Route, Link } from 'wouter';
 
@@ -13,7 +14,7 @@ const Header = () => {
     <header className='w-full h-full flex justify-between items-center p-4 bg-yellow-500'>
          {/* Izquierda: menu hamburguesa */}
         <div className='lg:hidden  h-16.5 items-center  w-1/3 bg-yellow-500  text-white '>
-           <span className=''>hamburguesa</span> 
+           <Hamburguesa/> 
         </div>
         {/* Derecha: logo  */}
         <div className='lg:w-1/4 items-start w-2/3 bg-yellow-500 flex' >
