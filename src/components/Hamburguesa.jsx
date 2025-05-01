@@ -1,13 +1,11 @@
-import React, { useState } from 'react'
+// src/components/Hamburguesa.jsx
+import React from 'react';
 
-export default function BurgerIcon() {
-  const [open, setOpen] = useState(false)
-
+export default function Hamburguesa({ open }) {
   return (
     <div
-      onClick={() => setOpen(!open)}
-      className={`w-[40px] h-[22px] mt-5.5 relative cursor-pointer transition-all duration-500 ${
-        open ? 'rotate-90 left-[3px] top-1' : ''
+      className={`w-[30px] h-[14px] mt-5.5 relative cursor-pointer transition-all duration-500 ${
+        open ? 'rotate-90 left-[8px] top-1' : ''
       }`}
     >
       <span
@@ -22,9 +20,9 @@ export default function BurgerIcon() {
       ></span>
       <span
         className={`block absolute h-[6px] w-full bg-orange-600 rounded-full left-0 transition-all duration-300 origin-center ${
-          open ? 'top-[12px]  rotate-[-135deg]' : 'top-[24px] '
+          open ? 'top-[12px]  rotate-[-135deg]' : 'top-[24px]'
         }`}
       ></span>
     </div>
-  )
+  );
 }
