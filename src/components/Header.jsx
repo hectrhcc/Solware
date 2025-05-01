@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Route, Link } from 'wouter';
 import Home from '../pages/Home';
 import ServiciosPage from '../pages/ServiciosPage';
@@ -11,6 +11,8 @@ const Header = () => {
   const [menuAbierto, setMenuAbierto] = useState(false);
   const [animandoCierre, setAnimandoCierre] = useState(false);
   const [openBurger, setOpenBurger] = useState(false); 
+  const [darkMode, setDarkMode] = useState(false)
+
   const cerrarMenu = () => {
     setAnimandoCierre(true);
     setOpenBurger(false); // <- cerrar hamburguesa
@@ -29,28 +31,52 @@ const Header = () => {
     }
   };
 
+  const handleClick = () => {
+    setDarkMode(!darkMode)
+  }
+
+  useEffect(() => {
+    const darkGuardado = localStorage.getItem("modoOscuro") === "true";
+    setDarkMode(darkGuardado);
+  }, []);
+  
+  useEffect(() => {
+    if (darkMode) {
+      document.body.parentElement?.classList.add("modo-oscuro");
+    } else {
+      document.body.parentElement?.classList.remove("modo-oscuro");
+    }
+    localStorage.setItem("modoOscuro", darkMode);
+  }, [darkMode]);
+
   return (
     <>
       <header className="w-full h-full flex justify-between items-center p-4 bg-yellow-500 relative">
         {/* Hamburguesa */}
-        <div className="lg:hidden w-1/3 h-16.5 items-center bg-yellow-500">
+        <div className="lg:hidden w-1/12 h-16.5 items-center bg-yellow-500">
           <button onClick={toggleMenu}>
             <Hamburguesa open={openBurger} />
           </button>
         </div>
 
         {/* Logo */}
-        <div className="lg:w-1/4 w-2/3 bg-yellow-500 flex items-start">
+        <div className="lg:w-1/4 w-10/12 bg-yellow-500 flex items-start">
           <img src={logoletra} alt="Logo de Solware" className="object-contain lg:w-70" />
         </div>
 
         {/* Menú escritorio */}
-        <nav className="gap-4 lg:w-3/4 hidden md:flex justify-end pr-30 bg-yellow-500 text-white items-center">
+        <nav className="lg:w-3/4   gap-4  hidden md:flex justify-end pr-1 bg-yellow-500 text-white place-items-start">
           <Link href="/" className="mr-3 text-xl pr-3 ml-20 font-semibold subrayado-naranja-espacio">Inicio</Link>
           <Link href="Servicios" className="mr-3 text-xl pr-3 font-semibold subrayado-naranja-espacio">Servicios</Link>
           <Link href="Portafolio" className="mr-3 text-xl pr-3 font-semibold subrayado-naranja-espacio">Portafolio</Link>
           <Link href="Contacto" className="mr-3 text-xl pr-3 font-semibold subrayado-naranja-espacio">Contacto</Link>
         </nav>
+        <div className="flex items-center justify-items-normal ">
+          <label htmlFor="darkmode" className=" bg-gray-300 dark:bg-gray-600 w-14 h-7 rounded-full cursor-pointer p-1  relative">
+            <input onClick={handleClick} type="checkbox" id="darkmode" className="sr-only peer" checked={darkMode} readOnly />
+            <div className="w-5 h-5 bg-white rounded-full peer-checked:translate-x-7 transition-all"></div>
+          </label>
+        </div>
 
         {/* Menú móvil */}
         {(menuAbierto || animandoCierre) && (

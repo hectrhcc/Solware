@@ -4,8 +4,8 @@ import React from 'react';
 export default function Hamburguesa({ open }) {
   return (
     <div
-      className={`w-[30px] h-[14px] mt-5.5 relative cursor-pointer transition-all duration-500 ${
-        open ? 'rotate-90 left-[8px] top-1' : ''
+      className={`w-[28px] h-[7px] mt-5.5 relative cursor-pointer transition-all duration-500 ${
+        open ? 'rotate-90 left-[11px] top-2.5' : ''
       }`}
     >
       <span
