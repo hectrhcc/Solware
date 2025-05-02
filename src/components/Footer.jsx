@@ -22,11 +22,11 @@ const Footer = () => {
       alt="Logo"
       className="w-89 h-17  object-contain "
     />
-    <span className="text-sm text-white bottom-3 mx-0">Desarrollo que impulsa tu negocio</span>
+    <span className="text-sm text-white bottom-3 mx-0  md:text-center lg:text-normal ">Desarrollo que impulsa tu negocio</span>
   </div>
 
   {/* Navegación */}
-  <div className="flex flex-col items-center mb-4 md:w-2/4 md:mb-0 md:justify-center" >
+  <div className="flex flex-col items-center mb-4 md:w-1/4  lg:w-2/4 md:mb-0 md:justify-center" >
   <div className="flex flex-col items-start">
  
   <Link href="/" className="text-white hover:text-sky-500 text-justify">› Inicio</Link>
@@ -41,13 +41,13 @@ const Footer = () => {
   {/*Contacto */}
   <div className='hidden md:block md:w-1/4 '>
     <h2 className="hidden md:block text-white text-lg font-semibold mb-2">Contacto</h2>
-    <p className="text-white font-semibold">✉ <span className='font-normal'>contacto@solware.cl</span></p>
-    <p className="text-white font-semibold">📱 <span className='font-normal'> +56 9 6768 9934</span> </p>
+    <p className="text-white font-semibold">✉ <span className='font-normal  md:text-sm lg:text-base'>contacto@solware.cl</span></p>
+    <p className="text-white font-semibold">📱 <span className='font-normal  md:text-sm lg:text-base'> +56 9 6768 9934</span> </p>
    
   </div>
 
   {/* Redes sociales */}
-  <div className="flex  md: flex-col justify-center items-center mb-3 md:w-1/4">
+  <div className="flex  md:flex-col justify-center items-center mb-3 md:w-1/4">
   <h2 className="hidden md:block text-white text-lg font-semibold mb-2">Encuéntranos aquí</h2>
   <div className="flex">
     <a
