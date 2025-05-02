@@ -4,17 +4,18 @@
     
     }
 ::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Color de fondo de la barra de desplazamiento */
+    background: #f1f1f1 !important; /* Color de fondo de la barra de desplazamiento */
     }
 ::-webkit-scrollbar-thumb {
-        background: linear-gradient(transparent,#034E7B );
-        border-radius:4rem;
-        height:8rem;
+        background: linear-gradient(transparent,#034E7B ) !important;
+        border-radius:4rem !important;
+        height:8rem !important;
         }
 
 .subrayado-naranja-espacio:hover {
-            text-decoration: underline;
-            text-decoration-color:#FFC125;
-            text-underline-offset: 0.5rem; 
-            text-decoration-thickness: 0.15rem; 
+            text-decoration: underline !important;
+            text-decoration-color:#FFC125 !important;
+            text-underline-offset: 0.5rem !important; 
+            text-decoration-thickness: 0.15rem !important; 
           }
+

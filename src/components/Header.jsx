@@ -11,7 +11,7 @@ const Header = () => {
   const [menuAbierto, setMenuAbierto] = useState(false);
   const [animandoCierre, setAnimandoCierre] = useState(false);
   const [openBurger, setOpenBurger] = useState(false); 
-  const [darkMode, setDarkMode] = useState(false)
+  const [darkMode, setDarkMode] = useState(false);
 
   const cerrarMenu = () => {
     setAnimandoCierre(true);
@@ -32,7 +32,7 @@ const Header = () => {
   };
 
   const handleClick = () => {
-    setDarkMode(!darkMode)
+    setDarkMode(!darkMode);
   }
 
   useEffect(() => {
@@ -65,16 +65,22 @@ const Header = () => {
         </div>
 
         {/* Menú escritorio */}
-        <nav className="lg:w-3/4   gap-4  hidden md:flex justify-end pr-1 bg-yellow-500 text-white place-items-start">
+        <nav className="lg:w-3/4 gap-4 hidden md:flex justify-end pr-1 bg-yellow-500 text-white place-items-start">
           <Link href="/" className="mr-3 text-xl pr-3 ml-20 font-semibold subrayado-naranja-espacio">Inicio</Link>
           <Link href="Servicios" className="mr-3 text-xl pr-3 font-semibold subrayado-naranja-espacio">Servicios</Link>
           <Link href="Portafolio" className="mr-3 text-xl pr-3 font-semibold subrayado-naranja-espacio">Portafolio</Link>
           <Link href="Contacto" className="mr-3 text-xl pr-3 font-semibold subrayado-naranja-espacio">Contacto</Link>
         </nav>
+
+        {/* Icono Sol / Luna */}
         <div className="flex items-center justify-items-normal ">
-          <label htmlFor="darkmode" className=" bg-gray-300 dark:bg-gray-600 w-14 h-7 rounded-full cursor-pointer p-1  relative">
-            <input onClick={handleClick} type="checkbox" id="darkmode" className="sr-only peer" checked={darkMode} readOnly />
-            <div className="w-5 h-5 bg-white rounded-full peer-checked:translate-x-7 transition-all"></div>
+          <label htmlFor="darkmode" className="bg-white w-14 h-7 rounded-full cursor-pointer p-1 border-1  border-yellow-600 relative">
+            <input onClick={handleClick} type="checkbox" id="darkmode" className="sr-only peer " checked={darkMode} readOnly />
+            <div id='luna'className="w-5 h-5 bg-white rounded-full peer-checked:translate-x-6 transition-all ">
+            <span className="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-between text-x rounded-full text-gray-800 peer-checked:text-gray-200 ">
+              {darkMode ? '🌙' : '☀️'}
+            </span>
+            </div>
           </label>
         </div>
 

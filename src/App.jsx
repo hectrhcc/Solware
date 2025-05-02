@@ -7,7 +7,7 @@ import Layout from './components/Layout';
 function App() {
   return (
     <Layout>
-    a ver probando
+    hola mundillo
     </Layout>
   );
 }
