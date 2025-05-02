@@ -9,6 +9,7 @@ module.exports = {
       extend: {
         colors: {
           'custom-blue': '#034E7B',//no funciona
+          'custom-celeste': '#034E7B',
         },
       },
     },
