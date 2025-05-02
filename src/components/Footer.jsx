@@ -56,7 +56,7 @@ const Footer = () => {
       rel="noopener noreferrer"
       className="text-white hover:text-sky-500 transition transform hover:-translate-y-1 duration-200 ease-in-out"
     >
-      <img src={linkedin} alt="logo linkedin" className="w-5 h-5 m-2  " />
+      <img src={linkedin} alt="logo linkedin" className="w-5 h-5 m-2 relative top-0.5 " />
     </a>
     <a
       href="mailto:contacto@solware.cl"
