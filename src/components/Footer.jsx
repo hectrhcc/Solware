@@ -13,7 +13,7 @@ const Footer = () => {
  
     return(
         <>  
-       <footer className="w-full flex flex-col items-center bg-sky-800 py-4  md:py-4 md:pt-10 md:pb-10">
+       <footer id="foot" className="w-full flex flex-col items-center  py-4  md:py-4 md:pt-10 md:pb-10">
   {/* Logo y frase */}
 <div className='md:flex md:flex-row md:justify-evenly md:items-center md:w-full '>
   <div className="flex flex-col items-center mb-4 md:w-1/4 md:mb-0">
