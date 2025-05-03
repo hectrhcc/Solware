@@ -74,9 +74,9 @@ const Header = () => {
 
         {/* Icono Sol / Luna */}
         <div className="flex items-center justify-items-normal ">
-          <label htmlFor="darkmode" className="bg-white w-14 h-7 rounded-full cursor-pointer p-1 border-1  border-yellow-600 relative">
+          <label htmlFor="darkmode" className="bg-white w-14 h-7 rounded-full cursor-pointer p-1 border-1  border-yellow-600 relative focus:outline-none focus:ring-0">
             <input onClick={handleClick} type="checkbox" id="darkmode" className="sr-only peer " checked={darkMode} readOnly />
-            <div id='luna'className="w-5 h-5 bg-white rounded-full peer-checked:translate-x-6 transition-all ">
+            <div id="luna" className="w-5 h-5  rounded-full peer-checked:translate-x-6 transition-all bg-white ">
             <span className="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-between text-x rounded-full text-gray-800 peer-checked:text-gray-200 ">
               {darkMode ? '🌙' : '☀️'}
             </span>
