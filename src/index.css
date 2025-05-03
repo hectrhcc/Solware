@@ -1,19 +1,19 @@
 @import "tailwindcss";
 
 .modo-oscuro body{
-    background-color: #0E0E0E;
+    background-color: #212121;
     color: white;
     
   }
 
 
   .modo-oscuro label{
-    background-color: #333;
+    background-color:#212121 ;
 
   }
 
   .modo-oscuro #luna{ /* div que contiene la luna */
-    background-color: #0E0E0E;
+    background-color:#111 ;
   }
 
   *:focus:not(:focus-visible) {
