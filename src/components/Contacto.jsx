@@ -15,11 +15,11 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-4  mx-auto bg-amber-300">
-      <div className='flex mt-5 '>
+      <div className='flex mt-7 '>
         
         <input
           {...register('nombre', { required: 'El nombre es obligatorio' })}
-          className=" w-5/12 rounded-2xl mr-4 ml-4 p-1 bg-white"
+          className=" w-5/12 rounded-2xl mr-4 ml-4 p-1 bg-white "
           placeholder='  Nombre'
         />
         {errors.nombre && <p className="text-red-500 text-sm">{errors.nombre.message}</p>}
@@ -44,7 +44,7 @@ export default function ContactForm() {
                <input
           type="telefono"
           {...register('telefono', { required: 'El telefono es obligatorio' })}
-          className=" w-5/12 rounded-2xl ml-4 mr-4 p-1 bg-white"
+          className=" w-5/12 rounded-2xl ml-4 mr-4 p-1 bg-white "
           placeholder='  Teléfono'
         />
         {errors.telefono && <p className="text-red-500 text-sm">{errors.telefono.message}</p>}
@@ -53,7 +53,7 @@ export default function ContactForm() {
       <div>
         <textarea
           {...register('mensaje', { required: 'El mensaje no puede estar vacío' })}
-          className=" min-w-11/12 rounded-2xl ml-3 mr-3 min-h-auto  bg-white"
+          className=" min-w-11/12 rounded-2xl ml-3 mr-3 min-h-auto h-36  bg-white"
           placeholder='   Mensaje'
         />
         {errors.mensaje && <p className="text-red-500 text-sm">{errors.mensaje.message}</p>}

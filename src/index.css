@@ -5,11 +5,13 @@
     color: white;
     
   }
+.modo-oscuro h1, .modo-oscuro h3 {
+    color:#00aae4;
+}
 
-
-  .modo-oscuro label{
+  .modo-oscuro label, .modo-oscuro input, .modo-oscuro textarea {
     background-color:#212121 ;
-
+    color:white;
   }
 
   .modo-oscuro #luna{ /* div que contiene la luna */
@@ -19,6 +21,7 @@
   *:focus:not(:focus-visible) {
     outline: none;
     box-shadow: none;
+
   }
 
  footer{
