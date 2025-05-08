@@ -1,8 +1,23 @@
 import React from 'react'
+import Contacto from '../components/Contacto';
 
 const ContactoPage = () => {
   return (
-    <div>ContactoPage</div>
+    <>
+      <h1 className='text-5xl font-bold color text-center mt-8'>Contacto</h1>
+      <div className='flex flex-col   bg-white w-full p-6'>
+    <p className='text-2xl mb-2 text-center'>¡Estamos aquí para ayudarte!</p>
+    <p className='text-lg mb-4 text-center '>Si tienes alguna pregunta o necesitas más información, no dudes en ponerte en contacto con nosotros. Estaremos encantados de ayudarte.</p>
+</div>
+      <Contacto/>
+      <div className='flex  bg-white w-full  p-1 text-center justify-center'>
+        <div className='flex flex-col  bg-white w-full  text-center justify-center '>
+          <h3 className='text-xl font-bold mb-3  mt-6 color'>Horario de Atención</h3>
+            <p>Lunes a viernes de 09:00 a 19:00 hrs.</p>
+            <p className='mb-8'> Sábado de 10:00 a 14:00 hrs.</p>
+      </div>
+      </div>
+    </>
   )
 }
 
