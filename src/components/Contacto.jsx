@@ -14,7 +14,7 @@ export default function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4  mx-auto bg-amber-300">
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4  mx-auto bg-amber-300 md:w-full">
       <div className='flex mt-7 '>
       <div className="flex flex-col">
         <input
@@ -22,7 +22,7 @@ export default function ContactForm() {
           className=" w-10/12 rounded-2xl  ml-4 mr-1 p-1 bg-white pl-4"
           placeholder='Nombre'
         />
-        {errors.nombre && <p className="text-red-500 text-sm w-1/3 w-full ml-5 ">{errors.nombre.message}</p>}
+        {errors.nombre && <p className="text-red-500 text-sm w-full ml-5 ">{errors.nombre.message}</p>}
         </div>
         <div className="flex flex-col">
                <input
@@ -30,7 +30,7 @@ export default function ContactForm() {
           className="  w-10/12 rounded-2xl ml-3 mr-1 p-1  bg-white  pl-4"
           placeholder='Apellido'
         />
-        {errors.apellido && <p className="text-red-500 text-sm w-1/3 w-full ml-5  ">{errors.apellido.message}</p>}
+        {errors.apellido && <p className="text-red-500 text-sm  w-full ml-5  ">{errors.apellido.message}</p>}
       </div>
      </div>
       <div className='flex '>
@@ -41,7 +41,7 @@ export default function ContactForm() {
           className=" w-10/12 rounded-2xl mr-1 ml-4 p-1  bg-white  pl-4"
           placeholder='Correo'
         />
-        {errors.correo && <p className="text-red-500 text-sm w-1/3 w-full ml-5  ">{errors.correo.message}</p>}
+        {errors.correo && <p className="text-red-500 text-sm  w-full ml-5  ">{errors.correo.message}</p>}
        </div>
        <div className="flex flex-col">
                <input
@@ -64,7 +64,7 @@ export default function ContactForm() {
 
       <button
         type="submit"
-        className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 mb-4  ml-4 "
+        className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 mb-4  ml-4 hover:scale-110 "
       >
         Enviar
       </button>
