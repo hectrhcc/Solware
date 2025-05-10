@@ -20,7 +20,7 @@ export default function ContactForm() {
       
        <div className='flex flex-col p-3 '>
                <h3 className='text-2xl text-center font-semibold mb-3 color 7 '>¡Estamos aquí para ayudarte!</h3>
-                <p className='text-lg mb-3 ml-4 mr-3 lg:ml-0 lg:mr-0 text-left justify-between mx-auto md:justify-center md:w-full text-wrap '>Si tienes alguna pregunta o necesitas más información, no dudes en ponerte en contacto con nosotros. Rellena con tus datos el siguiente formulario y en breve responderemos.</p>
+                <p className='text-lg mb-3 ml-4 mr-3 lg:ml-0 lg:mr-0 text-left justify-between mx-auto lg:justify-center lg:w-full text-wrap '>Si tienes alguna pregunta o necesitas más información, no dudes en ponerte en contacto con nosotros. Rellena con tus datos el siguiente formulario y en breve responderemos.</p>
         </div>
       
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4  mx-auto  lg:w-full lg:h-full">
