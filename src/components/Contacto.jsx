@@ -23,12 +23,12 @@ export default function ContactForm() {
                 <p className='text-lg mb-3 ml-4 mr-3 text-left justify-between  md:mx-auto md:justify-center md:w-full '>Si tienes alguna pregunta o necesitas más información, no dudes en ponerte en contacto con nosotros. Rellena el siguiente formulario y te responderemos en breve.</p>
         </div>
       
-      <form onSubmit={handleSubmit(onSubmit)} className="space-y-4  mx-auto  md:w-full md:h-full">
+      <form onSubmit={handleSubmit(onSubmit)} className="space-y-4  mx-auto  lg:w-full lg:h-full">
       <div className='flex  '>
       <div className="flex flex-col">
         <input
           {...register('nombre', { required: 'El nombre es obligatorio' })}
-          className=" w-10/12 rounded-2xl  ml-4 mr-1 p-1 pl-4 bg-gray-100  border-1 md:w-75 "
+          className=" w-10/12 rounded-2xl  ml-4 mr-1 p-1 pl-4 bg-gray-100  border-1 lg:w-75 "
           placeholder='Nombre'
         />
         {errors.nombre && <p className="text-red-500 text-sm w-full ml-5 ">{errors.nombre.message}</p>}
@@ -36,7 +36,7 @@ export default function ContactForm() {
         <div className="flex flex-col">
                <input
           {...register('apellido', { required: 'El apellido es obligatorio' })}
-          className="  w-10/12 rounded-2xl ml-3 mr-1 p-1  pl-4 bg-gray-100  border-1 md:w-75"
+          className="  w-10/12 rounded-2xl ml-3 mr-1 p-1  pl-4 bg-gray-100  border-1 lg:w-75"
           placeholder='Apellido'
         />
         {errors.apellido && <p className="text-red-500 text-sm  w-full ml-5  ">{errors.apellido.message}</p>}
@@ -47,7 +47,7 @@ export default function ContactForm() {
              <input
           type="email"
           {...register('correo', { required: 'El correo es obligatorio' })}
-          className=" w-10/12 rounded-2xl mr-1 ml-4 p-1 pl-4 bg-gray-100  border-1 md:w-75"
+          className=" w-10/12 rounded-2xl mr-1 ml-4 p-1 pl-4 bg-gray-100  border-1 lg:w-75"
           placeholder='Correo'
         />
         {errors.correo && <p className="text-red-500 text-sm  w-full ml-5  ">{errors.correo.message}</p>}
@@ -56,7 +56,7 @@ export default function ContactForm() {
                <input
           type="telefono"
           {...register('telefono', { required: 'El telefono es obligatorio' })}
-          className=" w-10/12 rounded-2xl ml-3 mr-1 p-1 pl-4 bg-gray-100 border-1 md:w-75"
+          className=" w-10/12 rounded-2xl ml-3 mr-1 p-1 pl-4 bg-gray-100 border-1 lg:w-75"
           placeholder='Teléfono'
         />
         {errors.telefono && <p className="text-red-500 text-sm w-full ml-5 ">{errors.telefono.message}</p>}
@@ -73,7 +73,7 @@ export default function ContactForm() {
 
       <button
         type="submit"
-        className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700   ml-4 hover:scale-110 md:w-155 md:py-3 md:hover:bg-blue-500 md:hover:scale-100"
+        className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700   ml-4 hover:scale-110 lg:w-155 lg:py-3 lg:hover:bg-blue-500 lg:hover:scale-100"
       >
         Enviar
       </button>
