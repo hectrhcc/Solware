@@ -36,7 +36,7 @@ const Footer = () => {
 <Link to="/contacto" className="text-white hover:text-sky-500 text-justify">› Contacto</Link>
     </div>
  
-    <div className='lg:hidden flex  flex-col  w-full   items-center text-white mt-4 '>
+    <div className='lg:hidden md:hidden flex  flex-col  w-full   items-center text-white mt-4 '>
        
        <h3 className='text-md font-semibold mb-2'>Horario de Atención</h3>
          <p className='text-xs'>Lunes a viernes: 09:00 a 19:00 hrs.</p>
