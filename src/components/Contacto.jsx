@@ -14,7 +14,7 @@ export default function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4  mx-auto bg-amber-300 md:w-full">
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4  mx-auto bg-amber-300  border-2 ">
       <div className='flex mt-7 '>
       <div className="flex flex-col">
         <input
