@@ -23,7 +23,7 @@ const ContactoPage = () => {
     <div className='  lg:flex  md:w-6/12 mx-auto '>  
       <Contacto/>
     </div>
-    <div className='hidden lg:block  w-3/12 relative right-13'>
+    <div className='hidden lg:block  w-3/12 '>
                         <p className=' text-4xl font-extralight text-center mt-1  '>Whatsapp QR</p>
               <img src={qrwsp} alt="whatsapp" className="hover:scale-105 mt-2 object-contain  mx-auto w-4/6  " />
               <p className=' font-bold text-center mt-1  '> +56967689934</p>
