@@ -23,7 +23,7 @@ export default function ContactForm() {
                 <p className='text-lg mb-3 ml-4 mr-3 text-left justify-between  md:mx-auto md:justify-center md:w-full '>Si tienes alguna pregunta o necesitas más información, no dudes en ponerte en contacto con nosotros. Rellena el siguiente formulario y te responderemos en breve.</p>
         </div>
       
-      <form onSubmit={handleSubmit(onSubmit)} className="space-y-4  mx-auto  md:w-full md:h-full ">
+      <form onSubmit={handleSubmit(onSubmit)} className="space-y-4  mx-auto  md:w-full md:h-full">
       <div className='flex  '>
       <div className="flex flex-col">
         <input
@@ -73,7 +73,7 @@ export default function ContactForm() {
 
       <button
         type="submit"
-        className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700   ml-4 hover:scale-110 md:w-155 md:py-3 "
+        className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700   ml-4 hover:scale-110 md:w-155 md:py-3 md:hover:bg-blue-500 md:hover:scale-100"
       >
         Enviar
       </button>
