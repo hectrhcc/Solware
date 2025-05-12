@@ -60,10 +60,9 @@ const Header = () => {
         </div>
 
         {/* Logo */}
-        <div className="lg:w-1/4 w-10/12 bg-yellow-500 flex items-start">
-          <img src={logoletra} alt="Logo de Solware" className="object-contain lg:w-70" />
+        <div className="lg:w-1/4 w-10/12 bg-yellow-500 flex items-start logo-emergente" >
+          <img src={logoletra} alt="Logo de Solware" className="object-contain lg:w-70 " />
         </div>
-
         {/* Menú escritorio */}
         <nav className="lg:w-3/4 gap-4 hidden md:flex justify-end pr-1 bg-yellow-500 text-white place-items-start">
           <Link href="/" className="mr-3 text-xl pr-3 ml-20 font-semibold subrayado-naranja-espacio">Inicio</Link>
@@ -130,6 +129,23 @@ const Header = () => {
             opacity: 0;
           }
         }
+@keyframes emerge {
+  0% {
+    transform: translateY(45%); 
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0); 
+    opacity: 1;
+  }
+}
+
+.logo-emergente {
+  animation: emerge 1s ease-out forwards;
+  z-index: 0; /* Asegura que el logo esté encima del contenido */
+}
+
+
       `}</style>
     </>
   );

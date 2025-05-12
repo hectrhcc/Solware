@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 .modo-oscuro body{
     background-color: #212121;
     color: white;
@@ -31,3 +32,5 @@
  
   
   }
+
+  
