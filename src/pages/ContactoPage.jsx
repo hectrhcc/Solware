@@ -24,7 +24,7 @@ const ContactoPage = () => {
     <div className='lg:flex  md:w-6/12 mx-auto  h-full'>  
       <Contacto/>
     </div>
-    <div className='hidden lg:block  w-3/12  h-full'>
+    <div className='hidden lg:block  w-3/12  h-full relative right-14'>
                         <p className=' text-4xl font-extralight text-center mt-1 mb-3  '>Whatsapp QR</p>
               <img src={qrwsp} alt="whatsapp" className="hover:scale-105 mt-2 object-contain  mx-auto w-4/6  " />
 <a
