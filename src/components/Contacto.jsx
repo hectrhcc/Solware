@@ -1,10 +1,13 @@
-import React from 'react';
 import emailjs from 'emailjs-com';
+import React, { useState } from 'react';
 
-// ContactForm.jsx
 import { useForm } from 'react-hook-form';
 
+
 export default function ContactForm() {
+  
+const [enviando, setEnviando] = useState(false);
+const [mensajeEnviado, setMensajeEnviado] = useState('');
   const {
     register,
     handleSubmit,
@@ -12,15 +15,22 @@ export default function ContactForm() {
   } = useForm();
 
   const onSubmit = (data) => {
+    setEnviando(true);
+  setMensajeEnviado('');
   emailjs
     .send('service_q9pmrw4', 'template_yqsk1zq', data, 'eNxWZ4qH5D6z_YoaK')
     .then((result) => {
       console.log('Mensaje enviado ✅', result.text);
-      alert('Mensaje enviado con éxito');
+      //alert('Mensaje enviado con éxito');
+      setMensajeEnviado('✅ Se ha enviado correctamente tu mensaje.');
     })
     .catch((error) => {
       console.error('Error al enviar ❌', error);
-      alert('Hubo un problema al enviar tu mensaje');
+      //alert('Hubo un problema al enviar tu mensaje');
+      setMensajeEnviado('❌ Hubo un problema al enviar tu mensaje. Intenta nuevamente.');
+    })
+    .finally(() => {
+      setEnviando(false);
     });
 };
 
@@ -84,9 +94,19 @@ export default function ContactForm() {
       <button
         type="submit"
         className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700   ml-5.5 hover:scale-110 lg:w-7/8 lg:py-3 lg:hover:bg-blue-500 lg:hover:scale-100"
+        disabled={enviando} // para evitar doble envío
       >
-        Enviar
+         <span className={enviando ? 'text-gray-100' : 'text-white'}>
+                {enviando ? 'Enviando...' : 'Enviar'}
+        </span>
       </button>
+      
+      {mensajeEnviado && (
+      <div className="mt-1 ml-6 mr-6 p-3 border-l-4 border-green-500 bg-green-100 text-green-700 rounded lg:w-7/8">
+        {mensajeEnviado}
+      </div>
+)}
+
       </form>
    </div>
   );
