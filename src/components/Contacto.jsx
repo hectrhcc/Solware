@@ -65,7 +65,7 @@ export default function ContactForm() {
       <div className='lg:flex-row lg:gap-1 lg:px-2'>
         <textarea
           {...register('mensaje', { required: 'El mensaje no puede estar vacío' })}
-          className=" min-w-11/12 rounded-2xl ml-3 mr-3 min-h-auto h-36  bg-gray-100 pl-4 border-1 lg:min-w-9/10 "
+          className="resize-none min-w-11/12 rounded-2xl ml-3 mr-3 min-h-auto h-36  bg-gray-100 pl-4 border-1 lg:min-w-9/10 "
           placeholder='Mensaje'
         />
         {errors.mensaje && <p className="text-red-500 text-sm block w-full pl-4">{errors.mensaje.message}</p>}
