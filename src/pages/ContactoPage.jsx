@@ -6,7 +6,7 @@ import qrwsp from '../../public/qrcode-56967689934.jpg';
 const ContactoPage = () => {
   return (
     <>
-      <h1 className='text-4xl lg:text-5xl font-bold color text-center mt-7' >Contacto</h1>
+      <h1 className='text-4xl lg:text-5xl font-bold color text-center mt-7 color' >Contacto</h1>
         <hr className="w-2/5 h-1 lg:w-2/12 mx-auto mt-2 mb-3 bg-amber-300 border-none rounded md:w-1/5 md:items-end" />
     <div className=' lg:flex  lg:flex-row mb-8 items-stretch'>
       <div className='hidden lg:flex  w-3/12  h-full'>
