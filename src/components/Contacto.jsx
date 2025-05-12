@@ -1,7 +1,14 @@
 import React from 'react';
+import emailjs from 'emailjs-com';
+
 
 // ContactForm.jsx
 import { useForm } from 'react-hook-form';
+
+
+
+
+
 
 export default function ContactForm() {
   const {
@@ -11,8 +18,17 @@ export default function ContactForm() {
   } = useForm();
 
   const onSubmit = (data) => {
-    console.log('Datos enviados:', data);
-  };
+  emailjs
+    .send('service_q9pmrw4', 'template_yqsk1zq', data, 'eNxWZ4qH5D6z_YoaK')
+    .then((result) => {
+      console.log('Mensaje enviado ✅', result.text);
+      alert('Mensaje enviado con éxito');
+    })
+    .catch((error) => {
+      console.error('Error al enviar ❌', error);
+      alert('Hubo un problema al enviar tu mensaje');
+    });
+};
 
   return (
     
@@ -39,7 +55,7 @@ export default function ContactForm() {
           className="  w-10/12 rounded-2xl ml-3 mr-1 p-1  pl-4 bg-gray-100  border-1  lg:ml-0 lg:mr-0 "
           placeholder='Apellido'
         />
-        {errors.apellido && <p className="text-red-500 text-sm  w-full ml-5  ">{errors.apellido.message}</p>}
+        {errors.apellido && <p className="text-red-500 text-sm  w-full ml-1  ">{errors.apellido.message}</p>}
       </div>
      </div>
       <div className='flex  lg:flex-row lg:gap-1 lg:px-2'>
@@ -59,13 +75,13 @@ export default function ContactForm() {
           className=" w-10/12 rounded-2xl ml-3 mr-1 p-1 pl-4 bg-gray-100 border-1 lg:ml-0 "
           placeholder='Teléfono'
         />
-        {errors.telefono && <p className="text-red-500 text-sm w-full ml-5 ">{errors.telefono.message}</p>}
+        {errors.telefono && <p className="text-red-500 text-sm w-full ml-1 ">{errors.telefono.message}</p>}
       </div>
     </div>
-      <div className='lg:flex-row lg:gap-1 lg:px-2'>
+      <div className='lg:flex-row lg:gap-1 lg:px-2  mb-1.5'>
         <textarea
           {...register('mensaje', { required: 'El mensaje no puede estar vacío' })}
-          className="resize-none min-w-11/12 rounded-2xl ml-3 mr-3 min-h-auto h-36  bg-gray-100 pl-4 border-1 lg:min-w-9/10 "
+          className=" min-w-11/12 rounded-2xl ml-3 mr-3 min-h-auto h-36  bg-gray-100 pl-4 border-1 lg:min-w-9/10 "
           placeholder='Mensaje'
         />
         {errors.mensaje && <p className="text-red-500 text-sm block w-full pl-4">{errors.mensaje.message}</p>}

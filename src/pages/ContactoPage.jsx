@@ -8,23 +8,23 @@ const ContactoPage = () => {
     <>
       <h1 className='text-5xl font-bold color text-center mt-7' >Contacto</h1>
         <hr className="w-1/2 h-1 mx-auto mt-2 mb-3 bg-amber-300 border-none rounded md:w-1/6 md:items-end" />
-    <div className=' lg:flex  lg:flex-row mb-8 '>
-      <div className='hidden lg:flex  w-3/12'>
+    <div className=' lg:flex  lg:flex-row mb-8 items-stretch'>
+      <div className='hidden lg:flex  w-3/12  h-full'>
       <video
        src="/contactman.mp4"
       autoPlay
       loop
       muted
       playsInline
-      className="w-full h-120"
+      className="w-full  h-117"
       >
       Tu navegador no soporta la reproducción de video.
       </video>
       </div>
-    <div className='  lg:flex  md:w-6/12 mx-auto '>  
+    <div className='lg:flex  md:w-6/12 mx-auto  h-full'>  
       <Contacto/>
     </div>
-    <div className='hidden lg:block  w-3/12 '>
+    <div className='hidden lg:block  w-3/12  h-full'>
                         <p className=' text-4xl font-extralight text-center mt-1 mb-3  '>Whatsapp QR</p>
               <img src={qrwsp} alt="whatsapp" className="hover:scale-105 mt-2 object-contain  mx-auto w-4/6  " />
 <a
