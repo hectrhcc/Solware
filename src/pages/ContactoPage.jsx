@@ -16,7 +16,7 @@ const ContactoPage = () => {
       loop
       muted
       playsInline
-      className="w-full  h-117 relative left-3"
+      className="w-full  h-117 "
       >
       Tu navegador no soporta la reproducción de video.
       </video>
