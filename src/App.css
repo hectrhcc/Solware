@@ -22,3 +22,8 @@
 .color{
     color: #151332 ; /* Color del texto */
 }
+
+.stroke{
+    stroke: black;
+stroke-width: 3;
+}
