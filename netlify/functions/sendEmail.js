@@ -3,8 +3,8 @@
 export async function handler(event) {
   if (event.httpMethod !== 'POST') {
     return {
-      statusCode: 405,
-      body: 'Method Not Allowed',
+         statusCode: 405,
+         body: JSON.stringify({ success: false, error: 'Method Not Allowed' }),
     };
   }
 
