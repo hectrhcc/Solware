@@ -15,24 +15,33 @@ const [mensajeEnviado, setMensajeEnviado] = useState('');
   } = useForm();
 
   const onSubmit = (data) => {
-    setEnviando(true);
+  setEnviando(true);
   setMensajeEnviado('');
-  emailjs
-    .send('service_q9pmrw4', 'template_yqsk1zq', data, 'eNxWZ4qH5D6z_YoaK')
-    .then((result) => {
-      console.log('Mensaje enviado ✅', result.text);
-      //alert('Mensaje enviado con éxito');
-      setMensajeEnviado('✅ Se ha enviado correctamente tu mensaje.');
+
+  fetch('/.netlify/functions/enviarCorreo', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data)
+  })
+    .then(res => res.json())
+    .then(res => {
+      if (res.success) {
+        setMensajeEnviado('✅ Se ha enviado correctamente tu mensaje.');
+      } else {
+        throw new Error(res.error);
+      }
     })
-    .catch((error) => {
-      console.error('Error al enviar ❌', error);
-      //alert('Hubo un problema al enviar tu mensaje');
+    .catch((err) => {
+      console.error('Error al enviar ❌', err);
       setMensajeEnviado('❌ Hubo un problema al enviar tu mensaje. Intenta nuevamente.');
     })
     .finally(() => {
       setEnviando(false);
     });
 };
+
 
   return (
     
