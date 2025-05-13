@@ -15,33 +15,28 @@ const [mensajeEnviado, setMensajeEnviado] = useState('');
   } = useForm();
 
   const onSubmit = (data) => {
-  setEnviando(true);
+    setEnviando(true);
   setMensajeEnviado('');
-
-  fetch('/.netlify/functions/sendEmail', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(data)
-  })
-    .then(res => res.json())
-    .then(res => {
-      if (res.success) {
-        setMensajeEnviado('✅ Se ha enviado correctamente tu mensaje.');
-      } else {
-        throw new Error(res.error);
-      }
+  emailjs.send(
+  import.meta.env.VITE_EMAILJS_SERVICE_ID,
+  import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+  data,
+  import.meta.env.VITE_EMAILJS_PUBLIC_KEY 
+);  
+    then((result) => {
+      console.log('Mensaje enviado ✅', result.text);
+      //alert('Mensaje enviado con éxito');
+      setMensajeEnviado('✅ Se ha enviado correctamente tu mensaje.');
     })
-    .catch((err) => {
-      console.error('Error al enviar ❌', err);
+    .catch((error) => {
+      console.error('Error al enviar ❌', error);
+      //alert('Hubo un problema al enviar tu mensaje');
       setMensajeEnviado('❌ Hubo un problema al enviar tu mensaje. Intenta nuevamente.');
     })
     .finally(() => {
       setEnviando(false);
     });
 };
-
 
   return (
     
