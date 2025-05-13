@@ -12,7 +12,7 @@ export async function handler(event) {
 
   const serviceID = process.env.EMAILJS_SERVICE_ID;
   const templateID = process.env.EMAILJS_TEMPLATE_ID;
-  const publicKey = process.env.EMAILJS_PRIVATE_KEY; // o PRIVATE_KEY si tienes cuenta pro
+  const privateKey = process.env.EMAILJS_PRIVATE_KEY;
 
   try {
     const response = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
@@ -23,7 +23,7 @@ export async function handler(event) {
       body: JSON.stringify({
         service_id: serviceID,
         template_id: templateID,
-        user_id: publicKey, // o `private_key` si pagas
+        user_id: privateKey, 
         template_params: data
       })
     });
