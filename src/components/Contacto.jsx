@@ -18,7 +18,7 @@ const [mensajeEnviado, setMensajeEnviado] = useState('');
   setEnviando(true);
   setMensajeEnviado('');
 
-  fetch('/.netlify/functions/enviarCorreo', {
+  fetch('/.netlify/functions/sendEmail', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
