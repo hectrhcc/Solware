@@ -1,5 +1,4 @@
 // netlify/functions/sendEmail.js
-import emailjs from 'emailjs-com';
 
 export async function handler(event) {
   if (event.httpMethod !== 'POST') {
@@ -11,22 +10,38 @@ export async function handler(event) {
 
   const data = JSON.parse(event.body);
 
+  const serviceID = process.env.EMAILJS_SERVICE_ID;
+  const templateID = process.env.EMAILJS_TEMPLATE_ID;
+  const publicKey = process.env.EMAILJS_PUBLIC_KEY; // o PRIVATE_KEY si tienes cuenta pro
+
   try {
-    const response = await emailjs.send(
-      process.env.EMAILJS_SERVICE_ID,
-      process.env.EMAILJS_TEMPLATE_ID,
-      data,
-      process.env.EMAILJS_PRIVATE_KEY
-    );
+    const response = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        service_id: serviceID,
+        template_id: templateID,
+        user_id: publicKey, // o `private_key` si pagas
+        template_params: data
+      })
+    });
+
+    const result = await response.json();
+
+    if (!response.ok) {
+      throw new Error(result?.error || 'Error en la petición');
+    }
 
     return {
       statusCode: 200,
-      body: JSON.stringify({ success: true, response }),
+      body: JSON.stringify({ success: true, result })
     };
   } catch (error) {
     return {
       statusCode: 500,
-      body: JSON.stringify({ success: false, error: error.message }),
+      body: JSON.stringify({ success: false, error: error.message })
     };
   }
 }
