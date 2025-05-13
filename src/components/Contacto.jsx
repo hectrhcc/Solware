@@ -1,13 +1,11 @@
 import emailjs from 'emailjs-com';
-emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
-
-import React, { useState } from 'react';
+import React, { useState , useEffect} from 'react';
 
 import { useForm } from 'react-hook-form';
 
 
 export default function ContactForm() {
-  
+   
 const [enviando, setEnviando] = useState(false);
 const [mensajeEnviado, setMensajeEnviado] = useState('');
   const {
@@ -15,6 +13,12 @@ const [mensajeEnviado, setMensajeEnviado] = useState('');
     handleSubmit,
     formState: { errors },
   } = useForm();
+
+  useEffect(() => {
+  emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+}, []);
+
+console.log('PUBLIC KEY:', import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
 
   const onSubmit = (data) => {
     setEnviando(true);
