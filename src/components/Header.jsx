@@ -131,7 +131,7 @@ const Header = () => {
         }
 @keyframes emerge {
   0% {
-    transform: translateY(45%); 
+    transform: translateY(30%); 
     opacity: 0;
   }
   100% {
