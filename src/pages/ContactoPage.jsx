@@ -1,15 +1,20 @@
 import React from 'react'
 import Contacto from '../components/Contacto';
 import qrwsp from '../../public/qrcode-56967689934.jpg';
-
+import { useEffect} from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const ContactoPage = () => {
+  useEffect(() => {
+  AOS.init({ duration: 1000, once: true });
+}, []);
   return (
     <>
       <h1 className='text-4xl lg:text-5xl font-bold color text-center mt-7 color' >Contacto</h1>
         <hr className="w-2/5 h-1 lg:w-2/12 mx-auto mt-2 mb-3 bg-amber-300 border-none rounded md:w-1/5 md:items-end" />
     <div className=' lg:flex  lg:flex-row mb-8 items-stretch'>
-      <div className='hidden lg:flex  w-3/12  h-full'>
+      <div className='hidden lg:flex  w-3/12  h-full ' data-aos="fade-right">
       <video
        src="/contactman.mp4"
       autoPlay
@@ -24,7 +29,7 @@ const ContactoPage = () => {
     <div className='lg:flex  md:w-6/12 mx-auto  h-full'>  
       <Contacto/>
     </div>
-    <div className='hidden lg:block  w-3/12  h-full relative right-14'>
+    <div className='hidden lg:block  w-3/12  h-full relative right-14 ' data-aos="fade-left">
                         <p className=' text-4xl font-extralight text-center mt-1 mb-3  '>Whatsapp QR</p>
               <img src={qrwsp} alt="whatsapp" className="hover:scale-105 mt-2 object-contain  mx-auto w-4/6  " />
 <a
@@ -32,7 +37,7 @@ const ContactoPage = () => {
       target="_blank"
       rel="noopener noreferrer"
     >
-           <svg className='mx-auto m-2.5 stroke' xmlns="http://www.w3.org/2000/svg" width="3.9em" height="3em" viewBox="0 0 256 258" >
+           <svg className='mx-auto m-2.5 stroke ' xmlns="http://www.w3.org/2000/svg" width="3.9em" height="3em" viewBox="0 0 256 258" >
 	<defs>
 		<linearGradient id="logosWhatsappIcon0" x1="50%" x2="50%" y1="100%" y2="0%">
 			<stop offset="0%" stop-color="#000" />

@@ -1,11 +1,11 @@
 import React from 'react'
-import Main from '../components/Main';
+import Mein from '../components/Mein';
 
 const Home = () => {
   return (
     <>
     Home Page
-    <Main/>
+    <Mein/>
     </>
   )
 }

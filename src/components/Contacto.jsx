@@ -1,6 +1,5 @@
 import emailjs from 'emailjs-com';
 import React, { useState , useEffect} from 'react';
-
 import { useForm } from 'react-hook-form';
 
 export default function ContactForm() {
@@ -45,7 +44,7 @@ const [mensajeEnviado, setMensajeEnviado] = useState('');
       
        <div className='flex flex-col p-3 '>
                <h3 className='text-2xl text-center font-semibold mb-3 color  '>¡Estamos aquí para ayudarte!</h3>
-                <p className='lg:text-xl lg:pl-6  lg:pr-9 text-lg mb-3 ml-3 mr-2 lg:ml-0  text-left justify-between mx-auto lg:justify-center lg:w-full text-wrap '>Si tienes alguna pregunta o necesitas más información, no dudes en ponerte en contacto con nosotros. Rellena con tus datos el siguiente formulario y en breve responderemos.</p>
+                <p className='lg:text-xl lg:pl-0  lg:pr-9 text-lg mb-3 ml-3 mr-2 lg:ml-0  text-left justify-between mx-auto lg:justify-center lg:w-full text-wrap '>Si tienes alguna pregunta o necesitas más información, no dudes en ponerte en contacto con nosotros. Rellena con tus datos el siguiente formulario y en breve responderemos.</p>
         </div>
       
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4  mx-auto  lg:w-full lg:h-full">

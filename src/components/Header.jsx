@@ -60,7 +60,7 @@ const Header = () => {
         </div>
 
         {/* Logo */}
-        <div className="lg:w-1/4 w-10/12 bg-yellow-500 flex items-start logo-emergente" >
+        <div className="lg:w-1/4 w-10/12 bg-yellow-500 flex items-start logo-emergente">
           <img src={logoletra} alt="Logo de Solware" className="object-contain lg:w-70 " />
         </div>
         {/* Menú escritorio */}
@@ -144,7 +144,6 @@ const Header = () => {
   animation: emerge 1s ease-out forwards;
   z-index: 0; /* Asegura que el logo esté encima del contenido */
 }
-
 
       `}</style>
     </>

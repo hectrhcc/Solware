@@ -1,14 +1,14 @@
 import React from 'react'
 
-const Main = () => {
+const Mein = () => {
 return(
 <>
 <div>
- Main
+ Mein no main 
  </div>
 </>
 )
 
 }
 
-export default Main;
+export default Mein;
