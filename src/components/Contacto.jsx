@@ -18,8 +18,6 @@ const [mensajeEnviado, setMensajeEnviado] = useState('');
   emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
 }, []);
 
-console.log('PUBLIC KEY:', import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
-
   const onSubmit = (data) => {
     setEnviando(true);
   setMensajeEnviado('');
