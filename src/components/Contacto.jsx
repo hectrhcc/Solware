@@ -3,7 +3,6 @@ import React, { useState , useEffect} from 'react';
 
 import { useForm } from 'react-hook-form';
 
-
 export default function ContactForm() {
    
 const [enviando, setEnviando] = useState(false);
@@ -41,8 +40,7 @@ const [mensajeEnviado, setMensajeEnviado] = useState('');
     });
 };
 
-  return (
-    
+  return (  
       <div className=' md:flex md:flex-col  '>
       
        <div className='flex flex-col p-3 '>
