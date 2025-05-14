@@ -15,10 +15,12 @@ const ContactoPage = () => {
   muted
   loop
   playsInline
-  className='rounded-2xl w-5/6 h-116  mx-auto mt-2.5'
+  className='w-5/6 h-118  mx-auto object-cover'
+  style={{ borderRadius: '0.2rem'}}
+
 >
   <source
-    src="https://videos.pexels.com/video-files/5474271/5474271-uhd_1440_2732_25fps.mp4"
+    src="https://videos.pexels.com/video-files/5492870/5492870-sd_360_640_30fps.mp4"
     type="video/mp4"
   />
   Tu navegador no soporta la reproducción de video.
