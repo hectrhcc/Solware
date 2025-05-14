@@ -20,9 +20,9 @@ const Footer = () => {
     <img
       src={logoletra}
       alt="Logo"
-      className="w-89 h-17  object-contain "
+      className="w-89 h-17  object-contain lg:relative lg:left-4 "
     />
-    <span className="text-sm text-white bottom-3 mx-0  md:text-center lg:text-normal ">Desarrollo que impulsa tu negocio</span>
+    <span className="text-sm text-white bottom-3 mx-0  md:text-center lg:text-normal lg:relative lg:left-5 lg:mt-3.5 ">Desarrollo que impulsa tu negocio</span>
   </div>
 
   {/* Navegación */}
