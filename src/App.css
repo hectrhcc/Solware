@@ -25,6 +25,18 @@
     color: #151332; /* Color del texto */
 }
 
+button{
+    background-color: #1A183E; /* Color de fondo */
+  color: silver;
+  font-weight: bold;
+}  
+
+button:hover{
+     color: #1A183E;
+    background-color: white; /* Color de fondo */
+     border: 2px solid #1A183E ; 
+}
+
 .stroke{
     stroke: black;
 stroke-width: 3;

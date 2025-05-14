@@ -98,10 +98,10 @@ const [mensajeEnviado, setMensajeEnviado] = useState('');
 
       <button
         type="submit"
-        className=" bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700   ml-5.5 hover:scale-110 lg:w-7/8 lg:py-3 lg:hover:bg-blue-500 lg:hover:scale-100"
+        className=" px-4 py-2 rounded border-2   ml-5.5 hover:scale-110 lg:w-7/8 lg:py-3 lg: lg:hover:scale-100"
         disabled={enviando} // para evitar doble envío
       >
-         <span className={enviando ? 'text-gray-100' : 'text-white'}>
+         <span >
                 {enviando ? 'Enviando...' : 'Enviar'}
         </span>
       </button>

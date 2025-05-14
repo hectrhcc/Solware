@@ -6,8 +6,12 @@
     color: white;
     
   }
+
 .modo-oscuro h1, .modo-oscuro h3 {
-    color:#00aae4;
+    color:#dcdcdc;
+}
+.modo-oscuro p {
+    color:#eeeeee ;
 }
 
   .modo-oscuro label, .modo-oscuro input, .modo-oscuro textarea {

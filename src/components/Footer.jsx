@@ -85,8 +85,8 @@ const Footer = () => {
   </div>
 </div>
   {/* Créditos */}
-  <div className="text-white text-xs text-center  md:relative md:top-12 md:mb-4">
-    © 2025 Solware. Todos los derechos reservados.
+  <div className="text-gray-300 text-xs text-center  md:relative md:top-12 md:mb-4">
+    Solware © 2025 - Todos los derechos reservados.
   </div>
 </footer>
 
