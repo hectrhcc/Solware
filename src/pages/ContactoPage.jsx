@@ -9,13 +9,13 @@ const ContactoPage = () => {
     <>
       <h1 className='text-4xl lg:text-5xl font-bold color text-center mt-7 mb-2 color' data-aos="fade-up" >CONTACTO</h1>
     <div className=' lg:flex  lg:flex-row mb-8 items-stretch'>
-      <div className='hidden lg:flex  w-3/12  h-full ' data-aos="fade-right">
+      <div className='hidden lg:flex  w-3/12  h-full  relative left-10 ' data-aos="fade-right">
    <video
   autoPlay
   muted
   loop
   playsInline
-  className='w-5/6 h-118  mx-auto object-cover'
+  className='w-5/6 h-116  mx-auto'
   style={{ borderRadius: '0.2rem'}}
 
 >
@@ -28,10 +28,10 @@ const ContactoPage = () => {
 
 
       </div>
-    <div className='lg:flex  md:w-6/12 mx-auto  h-full ' data-aos="fade-up">  
+    <div className='lg:flex  md:w-6/12 mx-auto  h-full  ' data-aos="fade-up">  
       <Contacto/>
     </div>
-    <div className='hidden lg:block  w-3/12  h-full relative right-14 ' data-aos="fade-left">
+    <div className='hidden lg:block  w-3/12  h-full relative right-9  ' data-aos="fade-left">
                         <p className=' text-4xl font-extralight text-center mt-1 mb-3  '>Whatsapp QR</p>
               <img src={qrwsp} alt="whatsapp" className="hover:scale-105 mt-2 object-contain  mx-auto w-4/6  " />
 <a
