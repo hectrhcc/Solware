@@ -7,15 +7,15 @@ const ContactoPage = () => {
  
   return (
     <>
-      <h1 className='text-4xl lg:text-5xl font-bold color text-center mt-7 mb-2 color' data-aos="fade-up" >CONTACTO</h1>
-    <div className=' lg:flex  lg:flex-row mb-8 items-stretch'>
+      <h1 className='text-4xl lg:text-5xl font-bold color text-center mt-7 lg:mt-15 mb-2 color' data-aos="fade-up" >CONTACTO</h1>
+    <div className=' lg:flex  lg:flex-row lg:mb-12 mb-7 items-stretch '>
       <div className='hidden lg:flex  w-3/12  h-full  relative left-10 ' data-aos="fade-right">
    <video
   autoPlay
   muted
   loop
   playsInline
-  className='w-5/6 h-110  mx-auto'
+  className='w-5/6 h-104 mt-6  mx-auto'
   style={{ borderRadius: '0.2rem'}}
 
 >
