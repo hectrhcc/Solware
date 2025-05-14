@@ -1,18 +1,13 @@
 import React from 'react'
 import Contacto from '../components/Contacto';
 import qrwsp from '../../public/qrcode-56967689934.jpg';
-import { useEffect} from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+
 
 const ContactoPage = () => {
-  useEffect(() => {
-  AOS.init({ duration: 1000, once: true });
-}, []);
+ 
   return (
     <>
-      <h1 className='text-4xl lg:text-5xl font-bold color text-center mt-7 color' >Contacto</h1>
-        <hr className="w-2/5 h-1 lg:w-2/12 mx-auto mt-2 mb-3 bg-amber-300 border-none rounded md:w-1/5 md:items-end" />
+      <h1 className='text-4xl lg:text-5xl font-bold color text-center mt-7 mb-2 color' data-aos="fade-up" >CONTACTO</h1>
     <div className=' lg:flex  lg:flex-row mb-8 items-stretch'>
       <div className='hidden lg:flex  w-3/12  h-full ' data-aos="fade-right">
       <video
@@ -26,7 +21,7 @@ const ContactoPage = () => {
       Tu navegador no soporta la reproducción de video.
       </video>
       </div>
-    <div className='lg:flex  md:w-6/12 mx-auto  h-full'>  
+    <div className='lg:flex  md:w-6/12 mx-auto  h-full ' data-aos="fade-up">  
       <Contacto/>
     </div>
     <div className='hidden lg:block  w-3/12  h-full relative right-14 ' data-aos="fade-left">
