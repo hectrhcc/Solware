@@ -10,16 +10,21 @@ const ContactoPage = () => {
       <h1 className='text-4xl lg:text-5xl font-bold color text-center mt-7 mb-2 color' data-aos="fade-up" >CONTACTO</h1>
     <div className=' lg:flex  lg:flex-row mb-8 items-stretch'>
       <div className='hidden lg:flex  w-3/12  h-full ' data-aos="fade-right">
-      <video
-       src="/contactman.mp4"
-      autoPlay
-      loop
-      muted
-      playsInline
-      className="w-full  h-117 "
-      >
-      Tu navegador no soporta la reproducción de video.
-      </video>
+   <video
+  autoPlay
+  muted
+  loop
+  playsInline
+  className='rounded-2xl w-5/6 h-116  mx-auto mt-2.5'
+>
+  <source
+    src="https://videos.pexels.com/video-files/5474271/5474271-uhd_1440_2732_25fps.mp4"
+    type="video/mp4"
+  />
+  Tu navegador no soporta la reproducción de video.
+</video>
+
+
       </div>
     <div className='lg:flex  md:w-6/12 mx-auto  h-full ' data-aos="fade-up">  
       <Contacto/>
