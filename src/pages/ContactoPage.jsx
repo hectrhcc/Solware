@@ -7,7 +7,7 @@ const ContactoPage = () => {
  
   return (
     <>
-      <h1 className='text-4xl lg:text-5xl font-bold color text-center mt-7 lg:mt-15 mb-2 color' data-aos="fade-up" >CONTACTO</h1>
+      <h1 className='text-4xl lg:text-5xl font-bold color text-center mt-7 lg:mt-10 mb-2 color' data-aos="fade-up" >CONTACTO</h1>
     <div className=' lg:flex  lg:flex-row lg:mb-12 mb-7 items-stretch '>
       <div className='hidden lg:flex  w-3/12  h-full  relative left-10 ' data-aos="fade-right">
    <video
@@ -15,12 +15,12 @@ const ContactoPage = () => {
   muted
   loop
   playsInline
-  className='w-5/6 h-104 mt-6  mx-auto'
+  className='w-full h-104 mt-6  mx-auto'
   style={{ borderRadius: '0.2rem'}}
 
 >
   <source
-    src="https://videos.pexels.com/video-files/5492870/5492870-sd_360_640_30fps.mp4"
+    src="https://videos.pexels.com/video-files/12894328/12894328-sd_360_640_24fps.mp4"
     type="video/mp4"
   />
   Tu navegador no soporta la reproducción de video.
