@@ -15,7 +15,7 @@ const ContactoPage = () => {
   muted
   loop
   playsInline
-  className='w-5/6 h-116  mx-auto'
+  className='w-5/6 h-110  mx-auto'
   style={{ borderRadius: '0.2rem'}}
 
 >

@@ -44,11 +44,11 @@ const [mensajeEnviado, setMensajeEnviado] = useState('');
       
        <div className='flex flex-col p-3 '>
                <h3 className='text-2xl text-center font-semibold mb-4 color'>¡Estamos aquí para ayudarte!</h3>
-                <p className='text-lg lg:ml-11  lg:text-xl  p-3 w-5/6  mx-auto  text-left justify-between  lg:justify-center lg:w-11/12  break-words'>
+                <p className='text-lg lg:ml-11  lg:text-xl  p-1 w-5/6   mx-auto  text-left justify-between  lg:justify-center lg:w-11/12  break-words'>
                 Si tiene alguna consulta o requiere información adicional, no dude en ponerse en contacto con nosotros.</p>        
                  </div>
       
-      <form onSubmit={handleSubmit(onSubmit)} className="lg:ml-8 space-y-3  mx-auto  lg:w-full lg:h-full">
+      <form onSubmit={handleSubmit(onSubmit)} className="mt-2 w-5/6 ml-6     lg:ml-8 space-y-3  mx-auto  lg:w-full lg:h-full">
       <div className='flex  lg:flex-row lg:gap-1 lg:px-2'>
       <div className="flex flex-col lg:w-full ">
         <input
