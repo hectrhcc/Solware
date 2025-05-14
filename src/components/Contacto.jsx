@@ -42,10 +42,10 @@ const [mensajeEnviado, setMensajeEnviado] = useState('');
   return (  
       <div className=' md:flex md:flex-col mx-auto  w-full '>
       
-       <div className='flex flex-col p-3'>
+       <div className='flex flex-col p-3 '>
                <h3 className='text-2xl text-center font-semibold mb-4 color'>¡Estamos aquí para ayudarte!</h3>
-                <p className='lg:ml-12  lg:text-xl  text-lg mb-3 ml-3 mr-2   text-left justify-between mx-auto lg:justify-center lg:w-full text-wrap '>Si tienes alguna pregunta o necesitas más información, no dudes en ponerte en contacto con nosotros. Rellena con tus datos el siguiente formulario y en breve responderemos.</p>
-        
+                <p className='text-lg lg:ml-11  lg:text-xl  p-3 w-5/6  mx-auto  text-left justify-between  lg:justify-center lg:w-11/12  break-words'>
+                Si tiene alguna consulta o requiere información adicional, no dude en ponerse en contacto con nosotros.</p>        
                  </div>
       
       <form onSubmit={handleSubmit(onSubmit)} className="lg:ml-8 space-y-3  mx-auto  lg:w-full lg:h-full">
