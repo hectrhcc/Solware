@@ -42,8 +42,8 @@ const [mensajeEnviado, setMensajeEnviado] = useState('');
   return (  
       <div className=' md:flex md:flex-col mx-auto  w-full mb-0'>
        <div className='flex flex-col p-3 '>
-               <h3 className='text-2xl text-center font-semibold mb-4 color'>¡Estamos aquí para ayudarte!</h3>
-                <p className='text-lg lg:mb-1 lg:ml-11  lg:text-xl  p-1 w-5/6   mx-auto  text-left justify-between  md:hidden '>
+               <h3 className='text-xl md:text-2xl text-center font-semibold mb-4 color'>¡Estamos aquí para ayudarte!</h3>
+                <p className='text-sm md:text-lg lg:mb-1 lg:ml-11  lg:text-xl  p-1 w-5/6   mx-auto  text-left justify-between  md:hidden '>
                 Para consultas o más información, no dudes en contactarnos.</p> 
                 <p className='hidden md:block  mb-1 ml-5 lg:ml-9  md:text-normal text-xl  p-1  md:text-center lg:text-left lg:p-1 mx-auto  text-left  justify-center md:w-[89%] lg:w-[93%]  '>
                 Si tienes alguna consulta o requieres más información, no dudes en comunicarte con nosotros. Completa el formulario con tus datos y nos pondremos en contacto contigo a la brevedad.
