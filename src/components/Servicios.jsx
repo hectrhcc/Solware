@@ -7,11 +7,11 @@ import { Autoplay, Pagination } from 'swiper/modules';
 export default function Servicios() {
   return (
     <>
-      <h1 className='text-4xl lg:text-5xl font-bold color text-center mt-7 md:mt-10 mb-5'>
+      <h1 className='text-2xl md:text-4xl lg:text-5xl font-bold color text-center mt-7 md:mt-10 mb-5'>
         SERVICIOS
       </h1>
 
-      <p className='w-11/12 md:w-2/3 lg:w-1/2 mx-auto text-center text-lg lg:text-xl mb-5'>
+      <p className=' text-sm md:text-lg w-11/12 md:w-2/3 lg:w-1/2 mx-auto text-center lg:text-xl mb-5'>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
       </p>
 
@@ -31,7 +31,7 @@ export default function Servicios() {
         >
           {[1, 2, 3, 4].map((n) => (
             <SwiperSlide key={n}>
-              <div className='border p-6 text-center rounded shadow'>
+              <div className='text-md md:text-lg border p-6 text-center rounded shadow'>
                 Servicio {n}
               </div>
             </SwiperSlide>
