@@ -52,46 +52,46 @@ const [mensajeEnviado, setMensajeEnviado] = useState('');
       <div className='flex  lg:flex-row lg:gap-1 lg:px-2'>
       <div className="flex flex-col lg:w-full ">
         <input
-          {...register('nombre', { required: 'El nombre es obligatorio' })}
+          {...register('nombre', { required: 'nombre obligatorio' })}
           className=" w-10/12 rounded-2xl  ml-4 mr-1 p-1 pl-4 bg-gray-100  border-1   lg:mr-0 "
-          placeholder='Nombre'
+          placeholder='Nombre'   
         />
-        {errors.nombre && <p className="text-red-500 text-sm w-full  ml-5 ">{errors.nombre.message}</p>}
+        {errors.nombre && <p className="text-red-500 text-sm  ml-5 w-[90%] md:w-full ">{errors.nombre.message}</p>}
         </div>
         <div className="flex flex-col lg:w-full ">
                <input
-          {...register('apellido', { required: 'El apellido es obligatorio' })}
+          {...register('apellido', { required: 'apellido obligatorio' })}
           className="  w-10/12 rounded-2xl ml-3 mr-1 p-1  pl-4 bg-gray-100  border-1  lg:ml-0 lg:mr-0 "
           placeholder='Apellido'
         />
-        {errors.apellido && <p className="text-red-500 text-sm  w-full ml-5  ">{errors.apellido.message}</p>}
+        {errors.apellido && <p className="text-red-500 text-sm  ml-4  w-[90%] md:w-full ">{errors.apellido.message}</p>}
       </div>
      </div>
       <div className='flex  lg:flex-row lg:gap-1 lg:px-2'>
       <div className="flex flex-col lg:w-full ">
              <input
           type="email"
-          {...register('correo', { required: 'El correo es obligatorio' })}
+          {...register('correo', { required: 'correo obligatorio' })}
           className=" w-10/12 rounded-2xl mr-1 ml-4 p-1 pl-4 bg-gray-100  border-1  lg:mr-0"
-          placeholder='Correo'
+          placeholder='Correo'          
         />
-        {errors.correo && <p className="text-red-500 text-sm  w-full ml-5  ">{errors.correo.message}</p>}
+        {errors.correo && <p className="text-red-500 text-sm  ml-5 w-[90%]  md:w-full ">{errors.correo.message}</p>}
        </div>
        <div className="flex flex-col lg:w-full">
                <input
           type="telefono"
-          {...register('telefono', { required: 'El telefono es obligatorio' })}
+          {...register('telefono', { required: 'telefono obligatorio' })}
           className=" w-10/12 rounded-2xl ml-3 mr-1 p-1 pl-4 bg-gray-100 border-1 lg:ml-0 "
           placeholder='Teléfono'
         />
-        {errors.telefono && <p className="text-red-500 text-sm w-full ml-5 ">{errors.telefono.message}</p>}
+        {errors.telefono && <p className="text-red-500 text-sm ml-3 w-[91%] md:w-full ">{errors.telefono.message}</p>}
       </div>
     </div>
       <div className='lg:flex-row lg:gap-1 lg:px-2  mb-1.5 w-full'>
         <textarea
-          {...register('mensaje', { required: 'El mensaje no puede estar vacío' })}
+          {...register('mensaje', { required: 'Mensaje no puede estar vacío' })}
           className="resize-none min-w-11/12 rounded-2xl ml-3 mr-3 min-h-auto h-36  bg-gray-100 pl-4 border-1 lg:min-w-9/10 "
-          placeholder='Mensaje'
+          placeholder='Mensaje'    
         />
         {errors.mensaje && <p className="text-red-500 text-sm block w-full pl-4">{errors.mensaje.message}</p>}
       </div>
