@@ -4,7 +4,7 @@ export default function Portafolio() {
 
 return (  
 <>
- <h1 className='text-4xl lg:text-5xl font-bold color text-center mt-7 color lg:mt-10 mb-5' >PORTAFOLIO</h1>
+ <h1 className='text-4xl lg:text-5xl font-bold color text-center mt-7 color md:mt-10 mb-5' >PORTAFOLIO</h1>
     <p className='w-11/12 md:w-2/3 lg:w-1/2 mx-auto text-center text-lg lg:text-xl mb-5'>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
       </p>

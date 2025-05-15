@@ -7,7 +7,7 @@ import { Autoplay, Pagination } from 'swiper/modules';
 export default function Servicios() {
   return (
     <>
-      <h1 className='text-4xl lg:text-5xl font-bold color text-center mt-7 lg:mt-10 mb-5'>
+      <h1 className='text-4xl lg:text-5xl font-bold color text-center mt-7 md:mt-10 mb-5'>
         SERVICIOS
       </h1>
 
