@@ -56,7 +56,7 @@ const [mensajeEnviado, setMensajeEnviado] = useState('');
           className=" w-10/12 rounded-2xl  ml-4 mr-1 p-1 pl-4 bg-gray-100  border-1   lg:mr-0 "
           placeholder='Nombre'
         />
-        {errors.nombre && <p className="text-red-500 text-sm w-full ml-5 ">{errors.nombre.message}</p>}
+        {errors.nombre && <p className="text-red-500 text-sm w-full  ml-5 ">{errors.nombre.message}</p>}
         </div>
         <div className="flex flex-col lg:w-full ">
                <input
@@ -64,7 +64,7 @@ const [mensajeEnviado, setMensajeEnviado] = useState('');
           className="  w-10/12 rounded-2xl ml-3 mr-1 p-1  pl-4 bg-gray-100  border-1  lg:ml-0 lg:mr-0 "
           placeholder='Apellido'
         />
-        {errors.apellido && <p className="text-red-500 text-sm  w-full ml-1  ">{errors.apellido.message}</p>}
+        {errors.apellido && <p className="text-red-500 text-sm  w-full ml-5  ">{errors.apellido.message}</p>}
       </div>
      </div>
       <div className='flex  lg:flex-row lg:gap-1 lg:px-2'>
@@ -84,7 +84,7 @@ const [mensajeEnviado, setMensajeEnviado] = useState('');
           className=" w-10/12 rounded-2xl ml-3 mr-1 p-1 pl-4 bg-gray-100 border-1 lg:ml-0 "
           placeholder='Teléfono'
         />
-        {errors.telefono && <p className="text-red-500 text-sm w-full ml-1 ">{errors.telefono.message}</p>}
+        {errors.telefono && <p className="text-red-500 text-sm w-full ml-5 ">{errors.telefono.message}</p>}
       </div>
     </div>
       <div className='lg:flex-row lg:gap-1 lg:px-2  mb-1.5 w-full'>
