@@ -98,7 +98,7 @@ const [mensajeEnviado, setMensajeEnviado] = useState('');
 
       <button
         type="submit"
-        className=" px-4 py-2 rounded border-2   ml-5.5 hover:scale-110 lg:w-7/8 lg:py-3 lg: lg:hover:scale-100"
+        className=" px-4 py-2 rounded border-1   ml-5.5 hover:scale-110 lg:w-7/8 lg:py-3 lg:hover:scale-100"
         disabled={enviando} // para evitar doble envío
       >
          <span >

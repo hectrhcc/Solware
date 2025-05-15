@@ -2,11 +2,11 @@ import React from 'react'
 
 const Mein = () => {
 return(
-<>
-<div>
+
+<div className='mx-auto'>
  Mein no main 
  </div>
-</>
+
 )
 
 }

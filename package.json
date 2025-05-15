@@ -14,8 +14,10 @@
     "aos": "^2.3.4",
     "emailjs-com": "^3.2.0",
     "react": "^19.0.0",
+    "react-clear-carousel": "^1.0.8",
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.56.3",
+    "swiper": "^11.2.6",
     "tailwindcss": "^4.1.4",
     "wouter": "^3.7.0"
   },

@@ -54,7 +54,7 @@ const Header = () => {
       <header className="w-full h-full flex justify-between items-center p-4 bg-yellow-500 relative">
         {/* Hamburguesa */}
         <div className="lg:hidden w-1/12 h-16.5 items-center bg-yellow-500">
-          <button onClick={toggleMenu}>
+          <button onClick={toggleMenu} className="button-menu">
             <Hamburguesa open={openBurger} />
           </button>
         </div>

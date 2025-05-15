@@ -11,7 +11,7 @@
 ::-webkit-scrollbar-thumb {
         background: linear-gradient(transparent,#F0B100 ) !important;
         border-radius:4rem !important;
-        height:8rem !important;
+        height:5rem !important;
         }
 
 .subrayado-naranja-espacio:hover {
@@ -29,12 +29,28 @@ button{
     background-color: #1A183E; /* Color de fondo */
   color: silver;
   font-weight: bold;
+
 }  
 
 button:hover{
      color: #1A183E;
     background-color: white; /* Color de fondo */
      border: 2px solid #1A183E ; 
+}
+
+/* Excepción específica para botón de menú */
+.button-menu {
+  background-color: transparent;
+  color: inherit;
+  font-weight: normal;
+  border: none;
+}
+
+/* Si quieres también evitar hover del general */
+.button-menu:hover {
+  background-color: transparent;
+  color: inherit;
+  border: none;
 }
 
 .stroke{
