@@ -68,13 +68,23 @@ const PortafolioPage = () => {
              <div className="  ml-2 pt-2 pb-4 mb-0 h-7   bolitas "><div className="  bolita"><br/>
     </div><div className="  bolita2"><br/></div>
 <div className=" bolita3"><br/></div></div> 
+<a
+    href="https://pagesnap.netlify.app/"
+    target="_blank"
+    rel="nofollow noopener noreferrer"
+  >
           <img
             src={snap}
             alt='snap'
             className='w-full h-40 object-cover border-1 border-gray-100'
-          />
+          /></a>
           <h2 className='text-lg font-semibold color mt-2'>Snap</h2>
-              <img src={ojo} alt='ojo' className='mx-auto w-5 mt-2 '/>
+              <a
+    href="https://pagesnap.netlify.app/"
+    target="_blank"
+    rel="nofollow noopener noreferrer"
+  >
+              <img src={ojo} alt='ojo' className='mx-auto w-5 mt-2 '/></a>
         </div>
         
       </div>
