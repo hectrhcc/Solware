@@ -19,6 +19,11 @@
     color:white;
   }
 
+  .modo-oscuro .color{
+    color: #dcdcdc;
+  }
+
+
   .modo-oscuro #luna{ /* div que contiene la luna */
     background-color:#111 ;
   }

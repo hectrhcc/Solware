@@ -60,8 +60,10 @@ const Header = () => {
         </div>
 
         {/* Logo */}
-        <div className="lg:w-1/4 w-10/12 bg-yellow-500 flex items-start logo-emergente" >
-          <img src={logoletra} alt="Logo de Solware" className="object-contain lg:w-70 " />
+        <div className="lg:w-1/4 w-10/12 bg-yellow-500 flex items-start logo-emergente" >  
+ <Link href="/" > 
+ <img src={logoletra} alt="Logo de Solware" className="object-contain lg:w-70 " />
+</Link>
         </div>
         {/* Menú escritorio */}
         <nav className="lg:w-3/4 gap-4 hidden md:flex justify-end pr-1 bg-yellow-500 text-white place-items-start">
@@ -92,7 +94,7 @@ const Header = () => {
                 : 'animate-[desaparecerConAltura_0.5s_forwards]'
             }`}
           >
-            <Link href="/" onClick={cerrarMenu} className="pt-3 pb-3 pl-3 text-lg font-medium hover:text-white hover:bg-yellow-400 w-full">INICIO</Link>
+            <Link href="/" onClick={cerrarMenu} className="pt-3 pb-3 pl-3 text-lg font-medium hover:text-white hover:bg-yellow-400 w-full">INICIO</Link>  
             <Link href="Servicios" onClick={cerrarMenu} className="pt-3 pb-3 pl-3 text-lg font-medium hover:text-white hover:bg-yellow-400 w-full">SERVICIOS</Link>
             <Link href="Portafolio" onClick={cerrarMenu} className="pt-3 pb-3 pl-3 text-lg font-medium hover:text-white hover:bg-yellow-400 w-full">PORTAFOLIO</Link>
             <Link href="Contacto" onClick={cerrarMenu} className="pt-3 pb-3 pl-3 text-lg font-medium hover:text-white hover:bg-yellow-400 w-full">CONTACTO</Link>
