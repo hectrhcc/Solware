@@ -12,10 +12,10 @@ export default function Servicios() {
       </h1>
 
       <p className=' text-sm md:text-lg w-11/12 md:w-2/3 lg:w-1/2 mx-auto text-center lg:text-xl mb-5'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+      Impulsa tu presencia online con soluciones web a medida para tu negocio.
       </p>
 
-      <div className='w-[73%] md:w-4/5 lg:w-3/4 mx-auto mb-1 '>
+      <div className='w-[73%] md:w-4/5 lg:w-3/4 mx-auto mb-1'>
         <Swiper
           spaceBetween={20}
           autoplay={{ delay: 3000, disableOnInteraction: false }}
@@ -31,7 +31,7 @@ export default function Servicios() {
         >
           {[1, 2, 3, 4].map((n) => (
             <SwiperSlide key={n}>
-              <div className='text-md md:text-lg border p-6 text-center rounded shadow'>
+              <div className='text-md md:text-lg  p-6 text-center rounded bg-gray-200 ring-1 shadow-xl ring-black/10'>
                 Servicio {n}
               </div>
             </SwiperSlide>

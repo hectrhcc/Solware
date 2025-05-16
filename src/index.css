@@ -2,7 +2,7 @@
 
 
 .modo-oscuro body{
-    background-color: #212121;
+   background-color:#111;
     color: white;
     
   }
@@ -28,6 +28,14 @@
     background-color:#111 ;
   }
 
+  .modo-oscuro .divporta {
+    background-color:#222;
+  }
+
+  .modo-oscuro .divportafolio {
+    background-color:#111;
+  }
+
   *:focus:not(:focus-visible) {
     outline: none;
     box-shadow: none;
@@ -41,5 +49,27 @@
  
   
   }
+
+  
+.bolitas{
+  display: flex;
+  flex-direction: row;
+}
+.bolita{
+  border-radius: 50%;
+  background-color:#2C5D7D;
+  width:0.5rem;
+  height:0.5rem;
+  margin-bottom: 0.8rem; /* 5px / 10 = 0.5rem */
+}
+
+.bolita3{
+  display: inline;
+  border-radius: 50%;
+  background-color: #F0CF42;
+  width:0.5rem;
+  height:0.5rem;
+  margin-left:0.2rem;
+}
 
   

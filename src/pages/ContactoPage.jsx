@@ -7,7 +7,7 @@ const ContactoPage = () => {
  
   return (
     <>
-      <h1 className='text-2xl md:text-4xl lg:text-5xl font-bold color text-center mt-7 md:mt-10 mb-1 md:mb-2 color ' data-aos="fade-up" >CONTACTO</h1>
+      <h1 className='text-2xl md:text-4xl lg:text-5xl font-bold color text-center mt-7 md:mt-10 mb-0 lg:mb-1 md:mb-2 color ' data-aos="fade-up" >CONTACTO</h1>
     <div className=' lg:flex  lg:flex-row lg:mb-20 mb-7 items-stretch '>
       <div className='hidden lg:flex  w-3/12  h-full  relative left-10 ' data-aos="fade-right">
    <video
