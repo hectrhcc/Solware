@@ -35,6 +35,9 @@
   .modo-oscuro .divportafolio {
     background-color:#111;
   }
+.modo-oscuro .fondo {
+    background-color:#1111;
+  }
 
   *:focus:not(:focus-visible) {
     outline: none;

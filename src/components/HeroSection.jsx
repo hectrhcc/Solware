@@ -3,8 +3,8 @@ import React, { useState , useEffect} from 'react';
 export default function HeroSection() {
 
 return (  
-<div className='mx-auto'>
-Hero Section 
+<div className='mx-auto  w-full '>
+ 
 </div>
 )
 }
