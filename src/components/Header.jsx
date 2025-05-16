@@ -53,20 +53,20 @@ const Header = () => {
     <>
       <header className="w-full h-full flex justify-between items-center p-4 bg-yellow-500 relative">
         {/* Hamburguesa */}
-        <div className="lg:hidden w-1/12 h-16.5 items-center bg-yellow-500">
+        <div className="lg:hidden md:hidden w-1/12 h-16.5 items-center bg-yellow-500">
           <button onClick={toggleMenu} className="button-menu">
             <Hamburguesa open={openBurger} />
           </button>
         </div>
 
         {/* Logo */}
-        <div className="lg:w-1/4 w-10/12 bg-yellow-500 flex items-start logo-emergente" >  
+        <div className="lg:w-1/4 w-10/12 bg-yellow-500 flex items-start logo-emergente lg:relative lg:left-10" >  
  <Link href="/" > 
  <img src={logoletra} alt="Logo de Solware" className="object-contain lg:w-70 " />
 </Link>
         </div>
         {/* Menú escritorio */}
-        <nav className="lg:w-3/4 gap-4 hidden md:flex justify-end pr-1 bg-yellow-500 text-white place-items-start">
+        <nav className="lg:w-3/4 gap-4 hidden md:flex justify-center pr-1 bg-yellow-500 text-white place-items-start">
           <Link href="/" className="mr-3 text-xl pr-3 ml-20 font-semibold subrayado-naranja-espacio">Inicio</Link>
           <Link href="Servicios" className="mr-3 text-xl pr-3 font-semibold subrayado-naranja-espacio">Servicios</Link>
           <Link href="Portafolio" className="mr-3 text-xl pr-3 font-semibold subrayado-naranja-espacio">Portafolio</Link>
@@ -74,7 +74,7 @@ const Header = () => {
         </nav>
 
         {/* Icono Sol / Luna */}
-        <div className="flex items-center justify-items-normal ">
+        <div className="flex items-center justify-items-normal lg:relative lg:right-20 ">
           <label htmlFor="darkmode" className="bg-white w-14 h-7 rounded-full cursor-pointer p-1 border-1  border-yellow-600 relative focus:outline-none focus:ring-0">
             <input onClick={handleClick} type="checkbox" id="darkmode" className="sr-only peer " checked={darkMode} readOnly />
             <div id="luna" className="w-5 h-5  rounded-full peer-checked:translate-x-6 transition-all bg-white ">

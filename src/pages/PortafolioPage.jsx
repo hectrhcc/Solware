@@ -11,32 +11,33 @@ const PortafolioPage = () => {
 
       <div className='mt-5 mb-15 gap-5 flex flex-col lg:flex-row justify-center items-center w-full lg:w-3/4 mx-auto' data-aos="fade-up">
         
-        <div className='border-1 w-3/4 lg:w-1/2 p-6 text-center rounded shadow'>
+        <div className='bg-gray-100 rounded text-sm md:text-lg border-1 border-gray-800 w-3/4 lg:w-1/2 pt-6 pb-6 text-center shadow  transform transition-transform duration-300 hover:scale-105'>
           <img
             src={camara}
             alt='camarógrafos docentemás'
-            className='w-full h-40 object-cover rounded transform transition-transform duration-300 hover:scale-105'
+            className='w-full h-40 object-cover border-1 border-gray-100 '
           />
           <h2 className='text-lg font-semibold color mt-2'>Camarógrafos DocenteMás</h2>
         </div>
 
-        <div className='border-1 w-3/4 lg:w-1/2 p-6 text-center rounded shadow'>
+        <div className='bg-gray-100 rounded text-sm md:text-lg border-1 border-gray-800 w-3/4 lg:w-1/2 pt-6 pb-6 text-center shadow  transform transition-transform duration-300 hover:scale-105'>
           <img
             src={mascotas}
             alt='portal mascotas'
-            className='w-full h-40 object-cover rounded transform transition-transform duration-300 hover:scale-105'
+            className='w-full h-40 object-cover border-1 border-gray-100'
           />
           <h2 className='text-lg font-semibold color mt-2'>Portal Mascotas</h2>
         </div>
 
-        <div className='border-1 w-3/4 lg:w-1/2 p-6 text-center rounded shadow'>
+        <div className='bg-gray-100 rounded text-sm md:text-lg border-1 border-gray-800 w-3/4 lg:w-1/2 pt-6 pb-6 text-center shadow  transform transition-transform duration-300 hover:scale-105'>
           <img
             src={snap}
             alt='snap'
-            className='w-full h-40 object-cover rounded transform transition-transform duration-300 hover:scale-105'
+            className='w-full h-40 object-cover border-1 border-gray-100'
           />
           <h2 className='text-lg font-semibold color mt-2'>Snap</h2>
         </div>
+        
       </div>
     </>
   );
