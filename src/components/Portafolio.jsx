@@ -8,8 +8,8 @@ export default function Portafolio() {
 
 return (  
 <>
- <h1 className='text-2xl md:text-4xl lg:text-5xl font-bold color text-center mt-7 color md:mt-10 mb-5' >PORTAFOLIO</h1>
-    <p className='text-md md:text-lg w-11/12 md:w-2/3 lg:w-full mx-auto text-center lg:text-xl mb-5 lg:mb-12'>
+ <h1 className='text-2xl md:text-4xl lg:text-5xl font-bold color text-center mt-7 color md:mt-10 mb-5'  data-aos="fade-up">PORTAFOLIO</h1>
+    <p className='text-md md:text-lg w-11/12 md:w-2/3 lg:w-full mx-auto text-center lg:text-xl mb-5 lg:mb-12' data-aos="fade-up">
         Conoce algunos de los proyectos que hemos desarrollado junto a nuestros clientes.
       </p>
     <div className='mt-5 gap-5 flex flex-col lg:flex-row justify-center items-center w-full lg:w-3/4 mx-auto ' data-aos="zoom-in">    

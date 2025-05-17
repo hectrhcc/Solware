@@ -7,15 +7,15 @@ import { Autoplay, Pagination } from 'swiper/modules';
 export default function Servicios() {
   return (
     <>
-      <h1 className='text-2xl md:text-4xl lg:text-5xl font-bold color text-center mt-7 md:mt-10 mb-5'>
+      <h1 className='text-2xl md:text-4xl lg:text-5xl font-bold color text-center mt-7 md:mt-10 mb-5' data-aos="fade-up">
         SERVICIOS
       </h1>
 
-      <p className=' text-md md:text-lg w-11/12 md:w-2/3 lg:w-1/2 mx-auto text-center lg:text-xl mb-5'>
+      <p className=' text-md md:text-lg w-11/12 md:w-2/3 lg:w-1/2 mx-auto text-center lg:text-xl mb-5' data-aos="fade-up">
       Impulsa tu presencia online con soluciones web a medida para tu negocio.
       </p>
 
-      <div className='w-[73%] md:w-4/5 lg:w-3/4 mx-auto mb-1'>
+      <div className='w-[73%] md:w-4/5 lg:w-3/4 mx-auto mb-1' data-aos="zoom-in">
         <Swiper
           spaceBetween={20}
           autoplay={{ delay: 3000, disableOnInteraction: false }}

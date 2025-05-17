@@ -7,7 +7,7 @@ import ojo from '../../public/ojo.png';
 
 const PortafolioPage = () => {
   return (
-    <div className='bg-[#F9F4F2] divportafolio'> 
+    <div className='bg-[#F9F4F2] divportafolio' > 
       <Portafolio />
 
       <div className='mt-5 mb-15 gap-5 flex flex-col lg:flex-row justify-center items-center w-full lg:w-3/4 mx-auto' data-aos="fade-up">
