@@ -19,12 +19,13 @@ return(
   loop
   playsInline
   className='w-auto lg:h-65 mt-3 lg:w-1/2  '
-  style={{ borderRadius: '1.3rem'}}
+  style={{ borderRadius: '0.3rem'}}
  
    data-aos="fade-right"
 >
   <source
-    src="https://videos.pexels.com/video-files/5572860/5572860-sd_640_360_30fps.mp4"
+    //src="https://videos.pexels.com/video-files/5572860/5572860-sd_640_360_30fps.mp4"
+    src="https://videos.pexels.com/video-files/7989800/7989800-sd_640_360_25fps.mp4"
     type="video/mp4"
   />
   Tu navegador no soporta la reproducción de video.
@@ -42,7 +43,7 @@ return(
   loop
   playsInline
   className='w-full lg:h-65 mt-3 lg:w-1/2 '
-  style={{ borderRadius: '1.3rem'}}
+  style={{ borderRadius: '0.3rem'}}
  data-aos="fade-left"
 >
   <source

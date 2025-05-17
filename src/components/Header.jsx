@@ -60,7 +60,7 @@ const Header = () => {
         </div>
 
         {/* Logo */}
-        <div className="lg:w-1/4 w-10/12 bg-yellow-500 flex items-start logo-emergente lg:relative lg:left-10" >  
+        <div className="lg:w-1/4 w-10/12 bg-yellow-500 flex items-start logo-emergente lg:relative lg:left-25 md:relative md:left-4" >  
  <Link href="/" > 
  <img src={logoletra} alt="Logo de Solware" className="object-contain lg:w-70 " />
 </Link>

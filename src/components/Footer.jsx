@@ -13,16 +13,16 @@ const Footer = () => {
  
     return(
         <>  
-       <footer  className="w-full flex flex-col items-center  py-4  md:py-4 md:pt-12 md:pb-12">
+       <footer  className="w-full flex flex-col items-center  py-4  md:py-4 md:pt-12 md:pb-12 ">
   {/* Logo y frase */}
 <div className='md:flex md:flex-row md:justify-evenly md:items-center md:w-full '>
   <div className="flex flex-col items-center mb-4 md:w-1/4 md:mb-0">
     <img
       src={logoletra}
       alt="Logo"
-      className="w-89 h-17  object-contain lg:relative lg:left-15 "
+      className="w-89 h-17  object-contain  md:relative md:left-6 lg:relative lg:left-30"
     />
-    <span className="text-sm text-white bottom-3 mx-0  md:text-center lg:text-normal lg:relative lg:left-15 lg:mt-3.5 ">Desarrollo que impulsa tu negocio</span>
+    <span className="text-sm text-white bottom-3 mx-0  md:text-center lg:relative lg:left-30 lg:text-normal  lg:mt-3.5 md:relative md:left-6 ">Desarrollo que impulsa tu negocio</span>
   </div>
 
   {/* Navegación */}
@@ -47,21 +47,21 @@ const Footer = () => {
 
   {/*Contacto */}
   <div className='hidden md:block md:w-1/4 '>
-    <h2 className="hidden md:block text-white text-lg font-semibold mb-2">Contacto</h2>
-    <p className="text-white font-semibold">✉ <span className='font-normal  md:text-sm lg:text-base'>contacto@solware.cl</span></p>
-    <p className="text-white font-semibold">📱 <span className='font-normal  md:text-sm lg:text-base'> +56 9 6768 9934</span> </p>
+    <h2 className="hidden md:block text-white text-lg font-semibold mb-2 lg:relative lg:right-18">Contacto</h2>
+    <p className="text-white font-semibold   lg:relative lg:right-18">✉ <span className='font-normal  md:text-sm lg:text-base  '>contacto@solware.cl</span></p>
+    <p className="text-white font-semibold  lg:relative lg:right-18">📱 <span className='font-normal  md:text-sm lg:text-base  '> +56 9 6768 9934</span> </p>
    
   </div>
 
   {/* Redes sociales */}
   <div className="flex  md:flex-col justify-center items-center mb-3 md:w-1/4">
-  <h2 className="hidden md:block text-white text-lg font-semibold mb-2">Encuéntranos aquí</h2>
+  <h2 className="hidden md:block text-white text-lg font-semibold mb-2 lg:relative lg:right-28">Encuéntranos aquí</h2>
   <div className="flex">
     <a
       href="https://www.linkedin.com/company/solware-dev/"
       target="_blank"
       rel="noopener noreferrer"
-      className="text-white hover:text-sky-500 transition transform hover:-translate-y-1 duration-200 ease-in-out"
+      className="text-white hover:text-sky-500 transition transform hover:-translate-y-1 duration-200 ease-in-out lg:relative lg:right-28"
     >
       <img src={linkedin} alt="logo linkedin" className="w-5 h-5 m-2 relative top-0.5 " />
     </a>
@@ -69,7 +69,7 @@ const Footer = () => {
       href="mailto:contacto@solware.cl"
       target="_blank"
       rel="noopener noreferrer"
-      className="text-white hover:text-sky-500 transition transform hover:-translate-y-1 duration-200 ease-in-out"
+      className="text-white hover:text-sky-500 transition transform hover:-translate-y-1 duration-200 ease-in-out lg:relative lg:right-28"
     >
       <img src={mail} alt="logo mail" className="w-6 h-6 m-2" />
     </a>
@@ -77,7 +77,7 @@ const Footer = () => {
       href="https://wa.me/56967689934"
       target="_blank"
       rel="noopener noreferrer"
-      className="text-white hover:text-sky-500 transition transform hover:-translate-y-1 duration-200 ease-in-out"
+      className="text-white hover:text-sky-500 transition transform hover:-translate-y-1 duration-200 ease-in-out lg:relative lg:right-28"
     >
       <img src={wsp} alt="logo whatsapp" className="w-6 h-6 m-2" />
     </a>
