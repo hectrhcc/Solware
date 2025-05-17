@@ -4,7 +4,7 @@ import { Link } from 'wouter';
 
 export default function HeroSection() {
   return (
-    <section className="hero-320-fix hero min-h-screen mb-0 pb-0 w-full bg-white px-6 flex flex-row items-center justify-between gap-0 lg:gap-20 md:gap-9 overflow-hidden">
+    <section className="hero-320-fix hero min-h-screen mb-0 pb-0 w-full bg-white px-6 flex flex-row items-center justify-between gap-0 lg:gap-20 md:gap-9 overflow-hidden ">
 
       {/* Texto a la izquierda */}
       <div className="w-1/2 md:w-2/3 lg:w-1/2 text-left " >

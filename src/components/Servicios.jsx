@@ -31,14 +31,14 @@ export default function Servicios() {
   return (
     <>
       <h1
-        className="text-2xl md:text-4xl lg:text-5xl font-bold color text-center mt-7 md:mt-10 mb-5"
+        className="lg:pt-7 mt-10 text-2xl md:text-4xl lg:text-5xl font-bold color text-center  md:pt-8 pb-5 "
         data-aos="fade-up"
       >
         SERVICIOS
       </h1>
 
       <p
-        className="text-md md:text-lg w-11/12 md:w-2/3 lg:full mx-auto text-center lg:text-2xl mb-7"
+        className="text-md md:text-lg w-11/12 md:w-2/3 lg:w-full mx-auto text-center lg:text-2xl mb-7"
         data-aos="fade-up"
       >
         Impulsa tu presencia online con soluciones web a medida para tu negocio.

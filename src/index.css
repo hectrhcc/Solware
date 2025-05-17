@@ -57,6 +57,14 @@
 background: linear-gradient(145deg, #222, #222, #222); /* colores más equilibrados */
   }
 
+  .modo-oscuro ::-webkit-scrollbar-track {
+    background: #222 !important; /* Color de fondo de la barra de desplazamiento */
+    }
+  .modo-oscuro ::-webkit-scrollbar-track  {
+    background:#222 !important; /* Color de fondo de la barra de desplazamiento */
+    }
+  
+
   *:focus:not(:focus-visible) {
     outline: none;
     box-shadow: none;

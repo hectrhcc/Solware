@@ -6,7 +6,7 @@
     
     }
 ::-webkit-scrollbar-track {
-    background: #f1f1f1 !important; /* Color de fondo de la barra de desplazamiento */
+    background: #f2f3f4 !important; /* Color de fondo de la barra de desplazamiento */
     }
 ::-webkit-scrollbar-thumb {
         background: linear-gradient(transparent,#F0B100 ) !important;

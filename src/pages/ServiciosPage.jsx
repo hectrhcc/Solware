@@ -4,9 +4,7 @@ import Servicios from '../components/Servicios';
 const ServiciosPage = () => {
   return (
     <div className="w-full mb-20 px-4 md:px-10 lg:max-w-6xl mx-auto text-gray-800">
-      <div className="mt-15">
       <Servicios />
-      </div>
       <section className="mt-12 space-y-10 lg:w-[87%] lg:mx-auto ">
         {/* One Page */}
         <article className="divporta bg-[#fafbfd] p-6 rounded-lg shadow-[0_2px_10px_rgba(0,0,0,0.5)] text-justify break-words" data-aos="flip-down ">

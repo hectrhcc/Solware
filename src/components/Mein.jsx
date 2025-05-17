@@ -3,14 +3,14 @@ import React from 'react'
 const Mein = () => {
 return(
 
-<div className='fondo bg-white mx-auto mb-6 md:p-12 lg:p-0 lg:w-full '>
+<div className='fondo  mx-auto pb-6 md:p-12 lg:p-0 lg:w-full bg-[#F5F5F5]'> 
  <section className="  py-10 px-6 text-center lg:w-full ">
   
   <div className="max-w-3xl mx-auto space-y-8 lg:max-w-5xl ">
-    <h3 className="text-2xl text-left lg:text-4xl font-semibold mb-2 color lg:text-center lg:mb-10">Nuestra Misión</h3>
+    <h3 className="text-2xl text-left lg:text-4xl font-semibold mb-2 lg:text-center lg:mb-10 text-blue-950">Nuestra Misión</h3>
     <div className='flex flex-col lg:flex-row-reverse lg:gap-8 lg:w-full '>
       
-      <p className="text-md text-gray-700 text-justify mb-3 mt-2 lg:w-1/2 lg:text-2xl"  data-aos="fade-left">
+      <p className="text-md text-gray-950 text-justify mb-3 mt-2 lg:w-1/2 lg:text-2xl"  data-aos="fade-left">
   En Solware, ayudamos a personas y empresas a conectar con el mundo digital a través de soluciones web modernas, funcionales y personalizadas. Nos comprometemos a entregar un servicio cercano, transparente y de calidad, adaptado a las necesidades reales de nuestros clientes.
       </p>
        <video
@@ -32,9 +32,9 @@ return(
 </video>
     </div>
     
-      <h3 className="text-2xl lg:text-4xl text-left font-semibold mb-2 color lg:text-center lg:mb-10 lg:mt-14">Nuestra Visión</h3>
+      <h3 className="text-2xl lg:text-4xl text-left font-semibold mb-2  lg:text-center lg:mb-10 lg:mt-14 text-blue-950">Nuestra Visión</h3>
  <div className='flex flex-col lg:flex-row lg:gap-8 lg:w-full '>
-      <p className="text-md text-gray-700 text-justify mb-3 mt-2 lg:w-1/2 lg:text-2xl" data-aos="fade-right">
+      <p className="text-md text-gray-950 text-justify mb-3 mt-2 lg:w-1/2 lg:text-2xl" data-aos="fade-right">
         Ser una empresa reconocida en Chile por democratizar el acceso a tecnologías web, impulsando el crecimiento digital de emprendedores, pymes y profesionales con soluciones efectivas, asequibles y bien diseñadas.
       </p>
       <video
