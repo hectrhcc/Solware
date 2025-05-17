@@ -14,7 +14,6 @@ const Home = () => {
     </div>
     <div className=' w-full'>
     <Portafolio />
-    
     <Link href="Portafolio" >
      <button
         type="submit"

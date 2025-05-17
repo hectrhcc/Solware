@@ -1,5 +1,6 @@
 import React from 'react';
 import solware from '../../public/solware.png';
+import { Link } from 'wouter';
 
 export default function HeroSection() {
   return (
@@ -17,10 +18,11 @@ export default function HeroSection() {
 
         {/* Botones */}
         <button className="hero-320-fix hidden lg:block lg:relative lg:left-30 lg:bottom-4 mt-6 bg-indigo-600 text-white px-6 py-3 rounded-full text-base md:text-lg hover:bg-indigo-700 transition" data-aos="fade-up">
-          Lleva tu empresa al siguiente nivel
+        <Link href="Servicios">Lleva tu empresa al siguiente nivel</Link>  
         </button>
         <button className="block md:left-8 md:relative  lg:hidden mt-6 bg-indigo-600 text-white px-6 py-3 rounded-full text-base md:text-lg hover:bg-indigo-700 transition" data-aos="fade-up">
-          VER SERVICIOS
+           <Link href="Servicios">VER SERVICIOS</Link>
+          
         </button>
       </div>
 
