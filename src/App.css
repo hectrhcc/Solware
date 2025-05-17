@@ -57,3 +57,40 @@ button:hover{
     stroke: black;
 stroke-width: 3;
 }
+
+  
+@media (max-width: 374px) {
+  .hero-320-fix h1 {
+    font-size: 1.5rem; /* Ajustá según lo que necesités */
+    line-height: 2rem;
+    position: relative;
+    top: 1rem;
+  
+  }
+
+  .hero-320-fix p {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+     position: relative;
+    top: -2.2rem;
+    
+  }
+
+  .hero-320-fix img {
+   position: relative;
+       top: -5rem;
+       right:60%;
+    width: 240%;
+       
+  }
+
+  .hero-320-fix {
+    padding-top: 3rem;
+    padding-bottom: 0rem;
+    
+  }
+   .hero-320-fix button {
+     position: relative;
+    bottom: 3rem;
+     }
+}
