@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css'
 import Layout from './components/Layout';
-import ScrollToTop from './components/ScrollToTop';
+import ScrollToTop from './components/ScrollToTop'; //no confundir ScrolltoTop con ScrollToTop OJO AHI MAL NOMBRE
 import { useEffect} from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
