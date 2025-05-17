@@ -65,15 +65,15 @@ stroke-width: 3;
     line-height: 2rem;
     position: relative;
     top: 1rem;
-  
+    border: 2px solid transparent;
   }
 
   .hero-320-fix p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.5rem;
      position: relative;
     top: -2.2rem;
-    
+     border: 2px solid transparent;
   }
 
   .hero-320-fix img {
@@ -87,10 +87,11 @@ stroke-width: 3;
   .hero-320-fix {
     padding-top: 3rem;
     padding-bottom: 0rem;
-    
+     border: 2px solid transparent;
   }
    .hero-320-fix button {
      position: relative;
-    bottom: 3rem;
+     font-size: 0.7rem;
+    bottom: 2.5rem;
      }
 }
