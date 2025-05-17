@@ -15,6 +15,7 @@ const Home = () => {
         <button
         type="submit"
         className="mx-auto block mb-7 md:w-[15%]  w-[30%] lg:w-[8%] px-4 py-2 rounded-xl  border-1 mt-10 md:mb-0"
+        data-aos="zoom-in"
       >
         ver más
       </button>
@@ -26,6 +27,7 @@ const Home = () => {
      <button
         type="submit"
         className="mx-auto block mb-7 md:w-[15%]  w-[30%] lg:w-[8%] px-4 py-2 rounded-xl  border-1 mt-10 md:mb-0"
+        data-aos="zoom-in"
       >
         ver más
       </button>

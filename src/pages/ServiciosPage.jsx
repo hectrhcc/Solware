@@ -9,8 +9,8 @@ const ServiciosPage = () => {
       </div>
       <section className="mt-12 space-y-10 lg:w-[87%] lg:mx-auto ">
         {/* One Page */}
-        <article className="bg-[#fafbfd] p-6 rounded-lg shadow-[0_2px_10px_rgba(0,0,0,0.5)] text-justify break-words">
-          <h3 className="text-2xl font-semibold mb-3">📄 One Page </h3>
+        <article className="divporta bg-[#fafbfd] p-6 rounded-lg shadow-[0_2px_10px_rgba(0,0,0,0.5)] text-justify break-words" data-aos="flip-down ">
+          <h3 className="text-2xl font-semibold mb-3 color">📄 One Page </h3>
           <p > 
             Una página web completa con todo el contenido en una sola URL, sin navegación a otras páginas internas.
           </p>
@@ -21,7 +21,7 @@ const ServiciosPage = () => {
             Contiene secciones como Servicios, Sobre mí, Testimonios, Contacto y enlaces que llevan a diferentes partes de la página.
           </p>
            <h3 className="text-lg font-semibold mt-2 mb-2">Descripción:</h3>
-<ul className="list-disc-none list-inside mb-4">
+<ul className="list-disc-none list-inside mb-4 color">
     <li>✔️ Dominio por 1 año</li>
     <li>✔️ Hosting compartido por 1 año </li>
     <li>✔️ Diseño web personalizado</li>
@@ -35,8 +35,8 @@ const ServiciosPage = () => {
         </article>
 
         {/* Landing Page */}
-        <article className="bg-[#fafbfd] p-6 rounded-lg shadow-[0_2px_10px_rgba(0,0,0,0.5)] ">
-          <h2 className="text-2xl font-semibold mb-3">📈 Landing Page</h2>
+        <article className="divporta bg-[#fafbfd] p-6 rounded-lg shadow-[0_2px_10px_rgba(0,0,0,0.5)] " data-aos="flip-down">
+          <h2 className="text-2xl font-semibold mb-3 color">📈 Landing Page</h2>
           <p>
             Página diseñada para convertir visitantes en clientes, suscriptores o cualquier acción que quieras lograr.
           </p>
@@ -47,7 +47,7 @@ const ServiciosPage = () => {
             Diseño enfocado en una única meta, sin distracciones y con llamados a la acción claros y persuasivos.
           </p>
         <h3 className="text-lg font-semibold mt-2 mb-2">Descripción:</h3>
-  <ul className="list-disc-none list-inside mb-4">
+  <ul className="list-disc-none list-inside mb-4 color">
     <li>✔️ Dominio por 1 año</li>
     <li>✔️ Hosting compartido por 1 año</li>
     <li>✔️ Diseño enfocado en conversión y llamada a la acción (CTA)</li>
@@ -59,8 +59,8 @@ const ServiciosPage = () => {
         </article>
 
         {/* Sitio Corporativo */}
-        <article className="bg-[#fafbfd] p-6 rounded-lg shadow-[0_2px_10px_rgba(0,0,0,0.5)] ">
-          <h2 className="text-2xl font-semibold mb-3">🏢 Sitio Corporativo</h2>
+        <article className="divporta bg-[#fafbfd] p-6 rounded-lg shadow-[0_2px_10px_rgba(0,0,0,0.5)] " data-aos="flip-down">
+          <h2 className="text-2xl font-semibold mb-3 color">🏢 Sitio Corporativo</h2>
           <p>
             Páginas profesionales para empresas con varias secciones: Nosotros, Servicios, Blog, Contacto, entre otras.
           </p>
@@ -68,7 +68,7 @@ const ServiciosPage = () => {
             Ideal para fortalecer la presencia digital y comunicar la identidad y oferta de la empresa.
           </p>
           <h3 className="text-lg font-semibold mt-2 mb-2">Descripción:</h3>
-          <ul className="list-disc-none list-inside mb-4">
+          <ul className="list-disc-none list-inside mb-4 color">
     <li>✔️ Dominio por 1 año</li>
     <li>✔️ Hosting compartido o dedicado según necesidades</li>
     <li>✔️ Diseño corporativo profesional</li>
@@ -81,12 +81,12 @@ const ServiciosPage = () => {
         </article>
 
         {/* Desarrollo de Aplicaciones */}
-        <article className="bg-[#fafbfd] p-6 rounded-lg shadow-[0_2px_10px_rgba(0,0,0,0.5)] ">
-          <h2 className="text-2xl font-semibold mb-3">📱 Aplicación Móvil</h2>
+        <article className="divporta bg-[#fafbfd] p-6 rounded-lg shadow-[0_2px_10px_rgba(0,0,0,0.5)] " data-aos="flip-down">
+          <h2 className="text-2xl font-semibold mb-3 color">📱 Aplicación Móvil</h2>
           <p>
             Creamos aplicaciones móviles y web a medida, adaptadas a tus necesidades específicas.
           </p>
-                  <ul className="list-disc-none list-inside mb-4">
+                  <ul className="list-disc-none list-inside mb-4 color">
              <h3 className="text-lg font-semibold mt-2 mb-2">Descripción:</h3>
     <li>✔️ Análisis y definición de requerimientos personalizados</li>
     <li>✔️ Diseño UI/UX moderno y escalable</li>

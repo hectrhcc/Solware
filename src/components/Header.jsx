@@ -7,6 +7,7 @@ import ContactoPage from '../pages/ContactoPage';
 import logoletra from '../logoletra.png';
 import Hamburguesa from './Hamburguesa';
 
+
 const Header = () => {
   const [menuAbierto, setMenuAbierto] = useState(false);
   const [animandoCierre, setAnimandoCierre] = useState(false);
