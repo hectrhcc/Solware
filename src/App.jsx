@@ -13,7 +13,7 @@ function App() {
 }, []);
   return (
     <>
-    <ScrollToTop /> {/* 👈 Este es el que hace el scroll al cambiar de ruta */}
+    <ScrollToTop /> 
     <Layout />
     </>
   );
