@@ -4,9 +4,6 @@ import linkedin from '../linkedin.png';
 import wsp from '../wsp.png';
 import mail from '../mail.png';
 import { Route, Link } from 'wouter';
-import ServiciosPage from '../pages/ServiciosPage';
-import PortafolioPage from '../pages/PortafolioPage';
-import ContactoPage from '../pages/ContactoPage';
 
 
 const Footer = () => {
@@ -77,7 +74,7 @@ const Footer = () => {
       href="https://wa.me/56967689934"
       target="_blank"
       rel="noopener noreferrer"
-      className="text-white hover:text-sky-500 transition transform hover:-translate-y-1 duration-200 ease-in-out lg:relative lg:right-28"
+      className="text-white  lg:relative lg:right-28 hover:text-sky-500 transition transform hover:-translate-y-1 duration-200 ease-in-out"
     >
       <img src={wsp} alt="logo whatsapp" className="w-6 h-6 m-2" />
     </a>

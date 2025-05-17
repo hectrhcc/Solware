@@ -1,5 +1,5 @@
 @import "tailwindcss";
-
+@custom-variant hover (&:hover);
 
 .modo-oscuro body{
    background-color:#111;
@@ -78,28 +78,4 @@
   margin-left:0.2rem;
 }
 
-  
-@media (max-width: 374px) {
-  .hero-320-fix h1 {
-    font-size: 1.5rem; /* Ajustá según lo que necesités */
-    line-height: 2rem;
-    position: relative;
-    border: 1px solid red;
-  }
 
-  .hero-320-fix p {
-    font-size: 0.9rem;
-    line-height: 1.5rem;
-    border: 1px solid red;
-  }
-
-  .hero-320-fix img {
-    transform: translateX(-35%); /* Ajustá cuánto del logo querís mostrar */
-    width: 220%;
-  }
-
-  .hero-320-fix {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-}

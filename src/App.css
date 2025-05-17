@@ -45,13 +45,14 @@ button:hover{
   font-weight: normal;
   border: none;
 }
-
-/* Si quieres también evitar hover del general */
 .button-menu:hover {
   background-color: transparent;
   color: inherit;
+  font-weight: normal;
   border: none;
 }
+
+
 
 .stroke{
     stroke: black;
