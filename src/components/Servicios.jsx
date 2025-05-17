@@ -38,7 +38,7 @@ export default function Servicios() {
       </h1>
 
       <p
-        className="text-md md:text-lg w-11/12 md:w-2/3 lg:w-1/2 mx-auto text-center lg:text-xl mb-5"
+        className="text-md md:text-lg w-11/12 md:w-2/3 lg:w-1/2 mx-auto text-center lg:text-xl mb-7"
         data-aos="fade-up"
       >
         Impulsa tu presencia online con soluciones web a medida para tu negocio.
