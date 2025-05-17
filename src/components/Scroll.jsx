@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useLocation } from 'wouter';
 
-const ScrollToTop = () => {
+const Scroll = () => {
   const [location] = useLocation();
 
   useEffect(() => {
@@ -11,4 +11,4 @@ const ScrollToTop = () => {
   return null;
 };
 
-export default ScrollToTop;
+export default Scroll;
