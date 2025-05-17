@@ -14,9 +14,7 @@ export default function Servicios() {
       <p className=' text-md md:text-lg w-11/12 md:w-2/3 lg:w-1/2 mx-auto text-center lg:text-xl mb-5' data-aos="fade-up">
       Impulsa tu presencia online con soluciones web a medida para tu negocio.
       </p>
-<div className="p-4 text-white bg-black hover:bg-red-500">
-  Test hover
-</div>
+
       <div className='w-[73%] md:w-4/5 lg:w-3/4 mx-auto mb-1' data-aos="zoom-in">
         <Swiper
           spaceBetween={20}
