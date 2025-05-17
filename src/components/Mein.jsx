@@ -18,8 +18,8 @@ return(
   muted
   loop
   playsInline
-  className='w-auto lg:h-65 mt-3 lg:w-1/2'
-  style={{ borderRadius: '0.1rem'}}
+  className='w-auto lg:h-65 mt-3 lg:w-1/2  '
+  style={{ borderRadius: '1.3rem'}}
 
 >
   <source
@@ -40,8 +40,8 @@ return(
   muted
   loop
   playsInline
-  className='w-full lg:h-65 mt-3 lg:w-1/2'
-  style={{ borderRadius: '0.1rem'}}
+  className='w-full lg:h-65 mt-3 lg:w-1/2 '
+  style={{ borderRadius: '1.3rem'}}
 
 >
   <source
