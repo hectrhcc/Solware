@@ -14,7 +14,7 @@ return (
       </p>
     <div className='mt-5 gap-5 flex flex-col lg:flex-row justify-center items-center w-full lg:w-3/4 mx-auto ' data-aos="zoom-in">    
        
-        <div className=' divporta bg-gray-100  hover:bg-white rounded text-sm md:text-lg    w-3/4 lg:w-1/2  pb-7   text-center shadow-[0_4px_30px_rgba(0,0,0,0.5)]  transform transition-transform duration-300 hover:scale-105  '>
+        <div className=' divporta  bg-gray-100  hover:bg-white rounded text-sm md:text-lg    w-3/4 lg:w-1/2  pb-7   text-center shadow-[0_4px_30px_rgba(0,0,0,0.5)]  transform transition-transform duration-300 hover:scale-105  '>
             <div className="ml-2 pt-2 pb-4 mb-0 h-7   bolitas "><div className="  bolita"><br/>
     </div><div className="  bolita2"><br/></div>
 <div className=" bolita3"><br/></div></div>

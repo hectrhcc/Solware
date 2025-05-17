@@ -9,10 +9,10 @@ const Home = () => {
   return (
     <>
     <HeroSection/>
-    <div className='w-full '>
+    <div className='w-full lg:mb-20 '>
     <Servicios />
     </div>
-    <div className=' w-full'>
+    <div className=' w-full lg:mb-20 '>
     <Portafolio />
     <Link href="Portafolio" >
      <button
