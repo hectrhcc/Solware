@@ -21,12 +21,12 @@ const Home = () => {
       </button>
       </Link>
     </div>
-    <div className='fondo w-full lg:pb-15 pt-4  bg-[#FBFBFB]  '>
+    <div className='fondo w-full lg:pb-15   pt-4  bg-[#FBFBFB]  '>
     <Portafolio />
     <Link href="Portafolio" >
      <button
         type="submit"
-        className="mx-auto block mb-7 md:w-[15%]  w-[30%] lg:w-[8%] px-4 py-2 rounded-xl  border-1 mt-10 md:mb-0"
+        className="mx-auto  block mb-7 md:w-[15%]  w-[30%] lg:w-[8%] px-4 py-2 rounded-xl  border-1 mt-10 lg:mt-12 md:mb-0"
         data-aos="zoom-in"
       >
         ver más
