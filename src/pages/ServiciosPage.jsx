@@ -81,8 +81,9 @@ const ServiciosPage = () => {
         {/* Desarrollo de Aplicaciones */}
         <article className="divporta bg-[#fafbfd] p-6 rounded-lg shadow-[0_2px_10px_rgba(0,0,0,0.5)] " data-aos="flip-down">
           <h2 className="text-2xl font-semibold mb-3 color">📱 Aplicación Móvil</h2>
-          <p>
-            Creamos aplicaciones móviles y web a medida, adaptadas a tus necesidades específicas.
+          <p>Desarrollamos aplicaciones móviles personalizadas para Android, iOS o web, enfocadas en resolver necesidades reales de tu negocio o emprendimiento.
+Perfectas para transformar ideas en productos digitales funcionales, como apps de reservas, pedidos, servicios a domicilio, control interno, o interacción con tus clientes.
+Cada proyecto se diseña a medida, asegurando una experiencia intuitiva, rendimiento óptimo y escalabilidad futura.
           </p>
                   <ul className="list-disc-none list-inside mb-4 color">
              <h3 className="text-lg font-semibold mt-2 mb-2">Descripción:</h3>
@@ -94,7 +95,7 @@ const ServiciosPage = () => {
     <li>✔️ Publicación en tiendas (App Store, Google Play) si aplica</li>
     <li>✔️ Capacitación básica para uso y administración</li>
   </ul>
-          <p>El precio puede variar según la complejidad del proyecto.</p>
+          <p>💬 El precio puede variar según la complejidad del proyecto.</p>
           <p>Desde<strong> 500.000 CLP</strong></p>
         </article>
       </section>
