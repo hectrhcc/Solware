@@ -1,6 +1,6 @@
 import React from 'react';
 import Portafolio from '../components/Portafolio';
-import camara from '../../public/camarografo.png';
+import dash from '../../public/dashboard.png';
 import mascotas from '../../public/mascotas.png';
 import snap from '../../public/snap.png';
 import ojo from '../../public/ojo.png';
@@ -23,13 +23,13 @@ const PortafolioPage = () => {
   class="project project-title jobs-move"
 >
           <img
-            src={camara}
-            alt='camarógrafos docentemás'
+            src={dash}
+            alt='dashboard'
             className='w-full h-40 object-cover border-1 border-gray-100 '
           /></a>
-          <h2 className='text-lg font-semibold color mt-2'data-aos="flip-up">DocenteMás</h2>
+          <h2 className='text-lg font-semibold color mt-2'data-aos="flip-up">Dashboard</h2>
            <a
-  href="https://camarografos.vercel.app/"
+  href="https://mobile-first-dashboard.vercel.app/"
   target="_blank"
   rel="nofollow noopener noreferrer"
   class="project project-title jobs-move"
